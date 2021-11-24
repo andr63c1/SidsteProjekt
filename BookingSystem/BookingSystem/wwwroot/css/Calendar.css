@@ -40,6 +40,7 @@ body {
     }
 
 .weekdays {
+    width: 100%;
     margin: 0;
     padding: 10px 0;
     background-color: #ddd;
@@ -53,6 +54,7 @@ body {
     }
 
 .days {
+    width: 100%;
     padding: 10px 0;
     background: #eee;
     margin: 0;
@@ -95,4 +97,19 @@ body {
     .weekdays li, .days li {
         width: 12.2%;
     }
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.calendar{
+    width: 70%;
+}
+
+.dateInfo{
+    width: 30%;
+    border: 1px solid black;
 }
