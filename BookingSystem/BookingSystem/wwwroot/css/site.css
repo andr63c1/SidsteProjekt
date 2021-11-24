@@ -69,3 +69,29 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+/*Tilbage til EpmPatner knap*/
+#TilbagetilEpm {
+    padding: 5px;
+}
+#Logud, #MinProfil {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#BookButton {
+    margin-top: 30px;
+    width: 300px;
+    height: 75px;
+}
+#ManglerDuEnKonsulent {
+    padding: 15px;
+    font-size: 24px;
+}
+.navbar-brand {
+    padding-left:230px;
+    padding-right:230px;
+    font-size: 30px;
+}
+
