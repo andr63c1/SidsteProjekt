@@ -7,7 +7,7 @@
 </head>
 <h1>CSS Calendar</h1>
 
-<div class="container">
+<div class="bookingContainer">
     <div class="calendar">
         <div class="month">
             <ul>
@@ -63,7 +63,52 @@
             <li><span class="">30</span></li>
         </ul>
     </div>
-    <div class="dateInfo"></div>
+    <div class="dateInfo">
+        <div class="dateHeader">
+            <span>Oktover 24.</span>
+        </div>
+        <div class="infoBox displayTimeSlots">
+
+            <table>
+                <tr>
+                    <td>Dato</td>
+                    <td>Pris</td>
+                </tr>
+                <tr>
+                    <td>Dato</td>
+                    <td>Pris</td>
+                </tr>
+                <tr>
+                    <td>Dato</td>
+                    <td>Pris</td>
+                </tr>
+            </table>
+        </div>
+        <div class="infoBox bookingForm">
+            <form>
+                <label>Start</label><br />
+                <input type="time" /><br /><br />
+                <label>Varighed</label><br />
+                <select>
+                    <option>15</option>
+                    <option>30</option>
+                    <option>45</option>
+                    <option>60</option>
+                    <option>120</option>
+                </select><br /><br />
+                <label>Emne</label><br />
+                <select>
+                    <option>Microsoft Project</option>
+                    <option>Projekt styring</option>
+                    <option>Andet</option>
+                </select><br /><br />
+                <label>Kommentar</label><br />
+                <textarea></textarea><br /><br />
+                <input type="submit" class="submit"/>
+            </form>
+        </div>
+
+    </div>
 </div>
 
 

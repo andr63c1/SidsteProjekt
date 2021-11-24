@@ -15,6 +15,7 @@ body {
     width: 100%;
     background: #1abc9c;
     text-align: center;
+    border-radius: 10px 10px 0 0;
 }
 
     .month ul {
@@ -58,6 +59,7 @@ body {
     padding: 10px 0;
     background: #eee;
     margin: 0;
+    border-radius: 0 0 10px 10px;
 }
 
     .days li {
@@ -66,7 +68,7 @@ body {
         width: 13.6%;
         text-align: center;
         margin-bottom: 5px;
-        font-size: 12px;
+        font-size: 40px;
         color: #777;
     }
 
@@ -99,17 +101,39 @@ body {
     }
 }
 
-.container{
+.bookingContainer {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
 }
 
-.calendar{
+.calendar {
     width: 70%;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .dateInfo{
     width: 30%;
     border: 1px solid black;
+    border-radius: 10px;
+    background: #ddd;
+}
+
+.infoBox{
+    width: auto;
+    padding: 10px;
+}
+
+.dateHeader{
+    width: 100%;
+    background: green;
+    border-radius: 10px 10px 0 0;
+}
+.infoBox.displayTimeSlots {
+    border-bottom: 1px solid black;
+}
+
+.bookingForm form input, .bookingForm form select, .bookingForm form textarea{
+    width: 100%;
 }
