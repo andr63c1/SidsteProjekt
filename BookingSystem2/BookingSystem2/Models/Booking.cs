@@ -7,7 +7,7 @@ namespace BookingSystem2.Models
 {
     public class Booking
     {
-        public int bookingID { get; set; }
+        public int bookingId { get; set; }
         public DateTime paymentDate { get; set; }
         public bool status { get; set; }
         public DateTime date { get; set; }
