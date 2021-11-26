@@ -1,12 +1,10 @@
-﻿@page
-@model BookingSystem.Pages.BookingModel
+﻿@model BookingSystem2.Models.Booking
 @{
 }
 <head>
     <link rel="stylesheet" href="~/css/Calendar.css"/>
 </head>
 <h1>CSS Calendar</h1>
-
 <div class="bookingContainer">
     <div class="calendar">
         <div class="month">
@@ -65,7 +63,7 @@
     </div>
     <div class="dateInfo">
         <div class="dateHeader">
-            <span>Oktover 24.</span>
+            <span>Oktober 24.</span>
         </div>
         <div class="infoBox displayTimeSlots">
 
@@ -85,11 +83,11 @@
             </table>
         </div>
         <div class="infoBox bookingForm">
-            <form>
+            <form role="form" method="post">
                 <label>Start</label><br />
-                <input type="time" /><br /><br />
+                <input asp-for="startTime" type="time" /><br /><br />
                 <label>Varighed</label><br />
-                <select>
+                <select asp-for="duration">
                     <option>15</option>
                     <option>30</option>
                     <option>45</option>
@@ -97,13 +95,13 @@
                     <option>120</option>
                 </select><br /><br />
                 <label>Emne</label><br />
-                <select>
+                <select asp-for="topic">
                     <option>Microsoft Project</option>
                     <option>Projekt styring</option>
                     <option>Andet</option>
                 </select><br /><br />
                 <label>Kommentar</label><br />
-                <textarea></textarea><br /><br />
+                <textarea asp-for="comment"></textarea><br /><br />
                 <input type="submit" class="submit"/>
             </form>
         </div>

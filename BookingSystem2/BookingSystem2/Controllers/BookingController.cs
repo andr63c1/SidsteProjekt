@@ -21,11 +21,22 @@ namespace BookingSystem2.Controllers
             return View();
         }
 
-        public Booking AddBooking(Booking booking)
+        [HttpPost]
+        public IActionResult Index(Booking booking)
         {
-            //Add booking to database
-            var b = _context.Add(booking).Entity;
-            return b;
+                //Add booking to database
+                _context.Bookings.Add(new Booking() { 
+                    paymentDate = DateTime.Today, 
+                    status = true,
+                    date = DateTime.Today,
+                    startTime = DateTime.Today,
+                    duration = 3.333f,
+                    topic = "Something",
+                    comment = "Testing this new fancy stuff yay!!"
+                });
+                _context.SaveChanges();
+
+            return Index();
         }
     }
 }

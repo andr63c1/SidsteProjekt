@@ -10,6 +10,7 @@ namespace BookingSystem2.Models
     {
         public BookingContext(DbContextOptions<BookingContext> options) : base(options)
         {
+            Database.EnsureCreated();
         }
 
         public DbSet<Booking> Bookings { get; set; }
@@ -17,12 +18,11 @@ namespace BookingSystem2.Models
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Employee> Employees { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        public Booking AddBooking(Booking booking)
         {
-            modelBuilder.Entity<Booking>().ToTable("Booking");
-            modelBuilder.Entity<TimeSlot>().ToTable("TimeSlot");
-            modelBuilder.Entity<Customer>().ToTable("Customer");
-            modelBuilder.Entity<Employee>().ToTable("Employee");
+            Bookings.Add(booking);
+            SaveChanges();
+            return booking;
         }
 
     }
