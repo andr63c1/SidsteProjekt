@@ -7,8 +7,8 @@ namespace BookingSystem2.Models
 {
     public class Customer
     {
-        public int id { get; set; }
-        public string costname { get; set; }
+        public int customerID { get; set; }
+        public string name { get; set; }
         public string email { get; set; }
         public string company { get; set; }
         public int userCredentials { get; set; }
