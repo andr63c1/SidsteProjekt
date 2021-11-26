@@ -7,7 +7,7 @@ namespace BookingSystem2.Models
 {
     interface User
     {
-        public int userId { get; set; }
+        public int userID { get; set; }
         public string name { get; set; }
         public string email { get; set; }
         public string phone { get; set; }
