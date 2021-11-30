@@ -9,8 +9,8 @@
     <div class="calendar">
         <div class="month">
             <ul>
-                <li class="prev"><span onclick="prevMonth()">&#10094;</span ></li>
-                <li class="next">&#10095;</li>
+                <li class="prev"><span class="arrow" style="cursor: pointer;" onclick="prevMonth()">&#10094;</span ></li>
+                <li class="next"><span class="arrow" style="cursor: pointer;" onclick="nextMonth()">&#10095;</span></li>
                 <li>
                     <span id="month">August</span><br>
                     <span id="year" style="font-size:18px">2021</span>
@@ -27,7 +27,7 @@
             <li>Sa</li>
             <li>Su</li>
         </ul>
-        <ul class="days">
+        <ul style="cursor: pointer;" class="days">
             
         </ul>
     </div>
@@ -80,8 +80,8 @@
 </div>
 
 <script>
-    DrawDates();
     date = new Date();
+    DrawDates(date);
 
     function SelectDate(clickedId) {
         if (document.getElementsByClassName("active").length > 0) {
@@ -91,33 +91,55 @@
         
         var el = document.getElementById(clickedId);
         el.classList += "active";
+        date.setDate(clickedId);
     }
 
-    function DrawDates() {
+    function DrawDates(date) {
+        removeDate();
         var ul = document.getElementsByClassName("days")[0];
-        for(var d = 1; d <= daysInMonth(11, 2021); d++) {
+        for (var d = 1; d <= daysInMonth(date.getMonth(), date.getYear() + 1900); d++) {
             var li = document.createElement("li");
             var span = document.createElement("span");
             span.setAttribute("id", d);
             span.setAttribute("class", "")
             span.onclick = function() { SelectDate(this.id) };
             span.innerHTML = d;
+            span.setAttribute("style", "cursor: pointer;");
             li.appendChild(span);
             ul.appendChild(li);
         }
+        updateMonthYear();
     }
 
     function daysInMonth(month, year) {
-        return new Date(year, month, 0).getDate();
+        return new Date(year, month +1, 0).getDate();
     }
 
     function prevMonth() {
         date.setMonth(date.getMonth() - 1);
+        DrawDates(date);
+
+    }
+    function nextMonth() {
+        date.setMonth(date.getMonth() + 1);
+        DrawDates(date);
+        
+    } 
+
+    function updateMonthYear() {
         var monthElement = document.getElementById("month");
         const month = date.toLocaleString('default', { month: 'long' });
         monthElement.innerHTML = month;
-
+        var yearElement = document.getElementById("year");
+        const year = date.getYear() + 1900;
+        yearElement.innerHTML = year;
     }
+
+    function removeDate() {
+        var ul = document.getElementsByClassName("days")[0];
+        ul.innerHTML = "";
+    }
+
 </script>
 
 

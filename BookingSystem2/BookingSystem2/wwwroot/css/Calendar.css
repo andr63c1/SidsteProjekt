@@ -137,3 +137,10 @@ body {
 .bookingForm form input, .bookingForm form select, .bookingForm form textarea{
     width: 100%;
 }
+
+.arrow {
+    cursor: pointer;
+}
+ul.days {
+    cursor: pointer;
+}
