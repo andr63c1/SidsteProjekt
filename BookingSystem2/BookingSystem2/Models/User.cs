@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace BookingSystem2.Models
 {
-    interface User
+    public interface User
     {
         public int userID { get; set; }
         public string name { get; set; }
