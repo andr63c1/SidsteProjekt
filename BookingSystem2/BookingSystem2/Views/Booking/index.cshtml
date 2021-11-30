@@ -54,6 +54,7 @@
         </div>
         <div class="infoBox bookingForm">
             <form role="form" method="post">
+                <input id="selectedDate" asp-for="date" type="date" style="display: none;"/>
                 <label>Start</label><br />
                 <input asp-for="startTime" type="time" /><br /><br />
                 <label>Varighed</label><br />
@@ -72,7 +73,7 @@
                 </select><br /><br />
                 <label>Kommentar</label><br />
                 <textarea asp-for="comment"></textarea><br /><br />
-                <input type="submit" class="submit"/>
+                <input type="submit" class="submit" />
             </form>
         </div>
 
@@ -91,7 +92,11 @@
         
         var el = document.getElementById(clickedId);
         el.classList += "active";
+
         date.setDate(clickedId);
+
+        var selectedDate = document.getElementById("selectedDate");
+        selectedDate.valueAsDate = date;
     }
 
     function DrawDates(date) {

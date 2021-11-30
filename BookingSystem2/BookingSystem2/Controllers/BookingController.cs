@@ -25,15 +25,7 @@ namespace BookingSystem2.Controllers
         public IActionResult Index(Booking booking)
         {
                 //Add booking to database
-                _context.Bookings.Add(new Booking() { 
-                    paymentDate = DateTime.Today, 
-                    status = true,
-                    date = DateTime.Today,
-                    startTime = DateTime.Today,
-                    duration = 3.333f,
-                    topic = "Something",
-                    comment = "Testing this new fancy stuff yay!!"
-                });
+                _context.Bookings.Add(booking);
                 _context.SaveChanges();
 
             return Index();
