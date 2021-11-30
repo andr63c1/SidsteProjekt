@@ -81,7 +81,7 @@
 
 <script>
     DrawDates();
-    Date = new Date();
+    date = new Date();
 
     function SelectDate(clickedId) {
         if (document.getElementsByClassName("active").length > 0) {
@@ -112,7 +112,7 @@
     }
 
     function prevMonth() {
-        var date = new Date(date.setMonth(date.getMonth() - 1));
+        date.setMonth(date.getMonth() - 1);
         var monthElement = document.getElementById("month");
         const month = date.toLocaleString('default', { month: 'long' });
         monthElement.innerHTML = month;
