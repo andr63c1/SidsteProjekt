@@ -28,37 +28,7 @@
             <li>Su</li>
         </ul>
         <ul class="days">
-            <li><span class="">1</span></li>
-            <li><span class="">2</span></li>
-            <li><span class="">3</span></li>
-            <li><span class="">4</span></li>
-            <li><span class="">5</span></li>
-            <li><span class="">6</span></li>
-            <li><span class="">7</span></li>
-            <li><span class="">8</span></li>
-            <li><span class="">9</span></li>
-            <li><span class="">10</span></li>
-            <li><span class="">11</span></li>
-            <li><span class="">12</span></li>
-            <li><span class="">12</span></li>
-            <li><span class="">13</span></li>
-            <li><span class="">14</span></li>
-            <li><span class="active">15</span></li>
-            <li><span class="">16</span></li>
-            <li><span class="">17</span></li>
-            <li><span class="">18</span></li>
-            <li><span class="">19</span></li>
-            <li><span class="">20</span></li>
-            <li><span class="">21</span></li>
-            <li><span class="">22</span></li>
-            <li><span class="">23</span></li>
-            <li><span class="">24</span></li>
-            <li><span class="">25</span></li>
-            <li><span class="">26</span></li>
-            <li><span class="">27</span></li>
-            <li><span class="">28</span></li>
-            <li><span class="">29</span></li>
-            <li><span class="">30</span></li>
+            
         </ul>
     </div>
     <div class="dateInfo">
@@ -108,6 +78,38 @@
 
     </div>
 </div>
+
+<script>
+    DrawDates();
+
+    function SelectDate(clickedId) {
+        if (document.getElementsByClassName("active").length > 0) {
+            var oldEl = document.getElementsByClassName("active");
+            oldEl[0].classList = "";
+        }
+        
+        var el = document.getElementById(clickedId);
+        el.classList += "active";
+    }
+
+    function DrawDates() {
+        var ul = document.getElementsByClassName("days")[0];
+        for(var d = 1; d <= daysInMonth(11, 2021); d++) {
+            var li = document.createElement("li");
+            var span = document.createElement("span");
+            span.setAttribute("id", d);
+            span.setAttribute("class", "")
+            span.onclick = function() { SelectDate(this.id) };
+            span.innerHTML = d;
+            li.appendChild(span);
+            ul.appendChild(li);
+        }
+    }
+
+    function daysInMonth(month, year) {
+        return new Date(year, month, 0).getDate();
+    }
+</script>
 
 
 
