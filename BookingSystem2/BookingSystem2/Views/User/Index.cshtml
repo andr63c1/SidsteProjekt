@@ -3,3 +3,24 @@
 *@
 @{
 }
+
+<head>
+    <link rel="stylesheet" href="~/css/Login.css" />
+</head>
+<body>
+    <center> <h1>Login</h1> </center>
+    <form class="loginForm">
+        <div class="loginContainer">
+            <label>Username : </label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <label>Password : </label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit">Login</button>
+            <input type="checkbox" checked="checked"> Remember me <br />
+            Forgot <a href="#"> password? </a>
+            <div class="separator">
+                <button type="button" class="signupbtn"> Signup</button>
+            </div>
+        </div>
+    </form>
+</body>
