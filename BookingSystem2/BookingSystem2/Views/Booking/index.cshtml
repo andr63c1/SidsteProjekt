@@ -33,21 +33,21 @@
     </div>
     <div class="dateInfo">
         <div class="dateHeader">
-            <span>Oktober 24.</span>
+            <span id="dateLabel">Oktober 24.</span>
         </div>
         <div class="infoBox displayTimeSlots">
 
             <table>
                 <tr>
-                    <td>Dato</td>
+                    <td>Tid</td>
                     <td>Pris</td>
                 </tr>
                 <tr>
-                    <td>Dato</td>
+                    <td>Tid</td>
                     <td>Pris</td>
                 </tr>
                 <tr>
-                    <td>Dato</td>
+                    <td>Tid</td>
                     <td>Pris</td>
                 </tr>
             </table>
@@ -97,6 +97,9 @@
 
         var selectedDate = document.getElementById("selectedDate");
         selectedDate.valueAsDate = date;
+
+        var options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+        document.getElementById("dateLabel").innerHTML = date.toLocaleString('default', options);
     }
 
     function DrawDates(date) {
@@ -107,13 +110,16 @@
             var span = document.createElement("span");
             span.setAttribute("id", d);
             span.setAttribute("class", "")
-            span.onclick = function() { SelectDate(this.id) };
+            span.onclick = function () { SelectDate(this.id) };
             span.innerHTML = d;
             span.setAttribute("style", "cursor: pointer;");
             li.appendChild(span);
             ul.appendChild(li);
         }
         updateMonthYear();
+
+        var dateDay = parseInt(date.toLocaleString('default', { day: 'numeric' }));
+        SelectDate(dateDay);
     }
 
     function daysInMonth(month, year) {

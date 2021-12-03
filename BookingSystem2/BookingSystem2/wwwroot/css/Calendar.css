@@ -41,6 +41,7 @@ body {
     }
 
 .weekdays {
+    display: none;
     width: 100%;
     margin: 0;
     padding: 10px 0;
@@ -125,10 +126,12 @@ body {
     padding: 10px;
 }
 
-.dateHeader{
+.dateHeader {
     width: 100%;
-    background: green;
+    background: #1abc9c;
+    color: white;
     border-radius: 10px 10px 0 0;
+    padding: 10px;
 }
 .infoBox.displayTimeSlots {
     border-bottom: 1px solid black;
@@ -143,4 +146,12 @@ body {
 }
 ul.days {
     cursor: pointer;
+}
+
+.displayTimeSlots table tr td:nth-child(2) {
+    float: right;
+}
+
+.displayTimeSlots table{
+    width: 100%;
 }
