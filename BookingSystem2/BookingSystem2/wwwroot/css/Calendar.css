@@ -132,6 +132,7 @@ body {
     color: white;
     border-radius: 10px 10px 0 0;
     padding: 10px;
+    text-transform: capitalize;
 }
 .infoBox.displayTimeSlots {
     border-bottom: 1px solid black;

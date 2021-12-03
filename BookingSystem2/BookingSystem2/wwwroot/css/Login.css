@@ -42,9 +42,17 @@ button:hover {
     padding: 25px;
     background-color: #eeeeee;
 }
-.separator {
-    border-top: 1px solid #7F7F7F;
-    padding-top: 15px;
-    margin-top: 15px;
+
+.orLabel{
+    width: 100%;
+    text-align: center;
 }
 
+.leftLine, .rightLine {
+    width: 45%;
+    border-top: 1px solid #7F7F7F;
+}
+
+.seperator{
+    margin: 2% 0 2% 0;
+}
