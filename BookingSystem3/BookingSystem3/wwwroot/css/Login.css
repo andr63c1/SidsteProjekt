@@ -1,0 +1,63 @@
+﻿
+Body {
+    font-family: Calibri, Helvetica, sans-serif;
+    background-color: #white;
+}
+
+button, .button {
+    -webkit-appearance: button;
+    background-color: #0db3c7;
+    width: 100%;
+    color: white;
+    padding: 15px;
+    margin: 10px 0px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.loginForm {
+    width: 50%;
+    margin: auto;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+button:hover, .button:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    color: white;
+}
+
+.cancelbtn .signupbtn {
+    width: auto;
+    padding: 10px 18px;
+    margin: 10px 5px;
+}
+
+
+.loginContainer {
+    padding: 25px;
+    background-color: #eeeeee;
+}
+
+.orLabel{
+    width: 100%;
+    text-align: center;
+}
+
+.leftLine, .rightLine {
+    width: 45%;
+    border-top: 1px solid #7F7F7F;
+}
+
+.seperator{
+    margin: 2% 0 2% 0;
+}
