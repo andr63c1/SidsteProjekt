@@ -70,9 +70,3 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
-
-.tabs {
-    display: flex;
-    flex-direction: column;
-    font-size: 25px;
-}

@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - BookingSystem3</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/Admin.css" />
 </head>
 <body>
     <header>
@@ -32,14 +33,17 @@
     </header>
     <div class="admin">
         <div class="tabs">
-            <a asp-controller="bookinger" asp-action="index">Bookinger</a> |
-            <a asp-controller="brugere" asp-action="index">Brugere</a> |
-            <a asp-controller="tider" asp-action="index">Tider</a> |
-            <a asp-controller="log" asp-action="index">Log</a>
+            <a asp-controller="Admin" asp-action="Bookinger">Bookinger</a> 
+            <a asp-controller="Admin" asp-action="Brugere">Brugere</a> 
+            <a asp-controller="Admin" asp-action="Tider">Tider</a> 
+            <a asp-controller="Admin" asp-action="Log">Log</a>
         </div>
-        <br /><br />
-        @RenderBody()
-        <br /><br />
+        <div class="RenderBody">
+            @RenderBody()
+        </div>
+    </div>
+    <div class>
+
     </div>
 
 </body>

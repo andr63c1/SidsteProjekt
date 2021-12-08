@@ -6,15 +6,35 @@ using System.Threading.Tasks;
 
 namespace BookingSystem3.Controllers
 {
-    [Route("bookinger")]
+    
     public class AdminController : Controller
     {
-        [Route("")]
-        [Route("index")]
-        [Route("~/")]
         public IActionResult Index()
+        {
+            return RedirectToAction("Bookinger", "Admin");
+        }
+
+        public IActionResult Bookinger()
+        {
+            return View();
+        }
+
+       
+        public IActionResult Brugere()
+        {
+            return View();
+        }
+       
+        public IActionResult Log()
+        {
+            return View();
+        }
+       
+        public IActionResult Tider()
         {
             return View();
         }
     }
+
+
 }
