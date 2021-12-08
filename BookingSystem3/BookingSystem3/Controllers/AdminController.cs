@@ -34,6 +34,10 @@ namespace BookingSystem3.Controllers
         {
             return View();
         }
+        public IActionResult AddTid()
+        {
+            return View();
+        }
     }
 
 
