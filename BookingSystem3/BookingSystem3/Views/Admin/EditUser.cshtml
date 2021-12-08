@@ -1,0 +1,57 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Rediger bruger</h2>
+
+
+<style>
+    form {
+        padding-left: 5%;
+    }
+    table input, table select, table textarea {
+        width: 100%;
+    }
+</style>
+
+<form>
+    <table>
+        <tr>
+            <td><label>Navn</label></td>
+            <td><input type="text" /></td>
+            <td><a>Rediger</a></td>
+        </tr>
+        <tr>
+            <td><label>Email</label></td>
+            <td><input type="email" /></td>
+            <td><a>Rediger</a></td>
+        </tr>
+        <tr>
+            <td><label>Tlf</label></td>
+            <td><input type="tel" /></td>
+            <td><a>Rediger</a></td>
+        </tr>
+        <tr>
+            <td><label>Fakturerings oplysninger</label></td>
+            <td><input type="text" /></td>
+            <td><a>Rediger</a></td>
+        </tr>
+        <tr>
+            <td><label>Firma</label></td>
+            <td><input type="text" /></td>
+            <td><a>Rediger</a></td>
+        </tr>
+        <tr>
+            <td><label>Rettigheder</label></td>
+            <td><select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </td>
+            <td><a>Rediger</a></td>
+        </tr>
+    </table>
+
+    <input type="submit"/>
+</form>
