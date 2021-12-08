@@ -1,0 +1,78 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Rediger booking</h2>
+
+
+<style>
+    form {
+        padding-left: 5%;
+    }
+    table input, table select, table textarea{
+        width: 100%;
+    }
+</style>
+
+<form>
+    <table>
+        <tr>
+            <td><label>Ansvarlig</label></td>
+            <td><input type="text" /></td>
+            <td><a>Rediger</a></td>
+        </tr>
+        <tr>
+            <td><label>Dato</label></td>
+            <td><input type="date" /></td>
+            <td><a>Rediger</a></td>
+        </tr>
+        <tr>
+            <td><label>Start</label></td>
+            <td><input type="time" /></td>
+            <td><a>Rediger</a></td>
+        </tr>
+        <tr>
+            <td><label>Slut</label></td>
+            <td><input type="time" /></td>
+            <td><a>Rediger</a></td>
+        </tr>
+        <tr>
+            <td><label>Repræsentant</label></td>
+            <td><input type="text" /></td>
+            <td><a>Rediger</a></td>
+        </tr>
+        <tr>
+            <td><label>Firma</label></td>
+            <td><input type="text" /></td>
+            <td><a>Rediger</a></td>
+        </tr>
+        <tr>
+            <td><label>Status</label></td>
+            <td>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </td>
+            <td><a>Rediger</a></td>
+        </tr>
+        <tr>
+            <td><label>Emne</label></td>
+            <td>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </td>
+            <td><a>Rediger</a></td>
+        </tr>
+        <tr>
+            <td>Kommentarer</td>
+            <td><textarea placeholder="Kommentarer"></textarea></td>
+            <td><a>Rediger</a></td>
+        </tr>
+    </table>
+    <input type="submit" />
+</form>
