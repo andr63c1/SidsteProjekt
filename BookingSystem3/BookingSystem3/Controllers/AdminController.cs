@@ -28,7 +28,7 @@ namespace BookingSystem3.Controllers
        
         public IActionResult Brugere()
         {
-            return View();
+            return View(_context.GetUser());
         }
        
         public IActionResult Log()
@@ -51,10 +51,10 @@ namespace BookingSystem3.Controllers
             _context.AddTimeSlot(timeSlot);
             return Redirect("/Admin/Tider"); ;
         }
-
-        public IActionResult EditUser()
+        [HttpGet("/Admin/EditUser/{id}")]
+        public IActionResult EditUser(int id)
         {
-            return View();
+            return View(_context.GetUser(id));
         }
 
         public IActionResult EditBooking()

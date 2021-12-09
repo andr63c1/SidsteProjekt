@@ -43,5 +43,22 @@ namespace BookingSystem3.Models
             return TimeSlots;
         }
 
+        public User EditUser(User user)
+        {
+            this.Update(user);
+            SaveChanges();
+
+            return user;
+        }
+
+        public IEnumerable<Customer> GetUser()
+        {
+            return Customers;
+        }
+        public Customer GetUser(int id)
+        {
+            return Customers.Single(x => x.customerID == id);
+        }
+
     }
 }

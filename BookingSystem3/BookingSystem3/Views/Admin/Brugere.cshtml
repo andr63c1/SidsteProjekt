@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<BookingSystem3.Models.Customer>
+@{
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
@@ -11,15 +12,16 @@
         <th>Telefon</th>
         <th>Password</th>
         <th>Firma</th>
-        <th></th>
 
     </tr>
-    <tr>
-        <td>Alfreds Futterkiste</td>
-        <td>Maria@Anders</td>
-        <td>1111111</td>
-        <td>************</td>
-        <td>Bilka</td>
-        <td><button>Læs Mere</button></td>
-    </tr>
+    @foreach (Customer user in Model)
+    {
+        <tr>
+            <td>@user.name.ToString()</td>
+            <td>@user.email.ToString()</td>
+            @*<td>@user.phone.ToString()</td>*@
+            <td>@user.userCredentials.ToString()</td>
+            <td><a href="/admin/editUser/@user.customerID">Læs mere</a></td>
+        </tr>
+    }
 </table>

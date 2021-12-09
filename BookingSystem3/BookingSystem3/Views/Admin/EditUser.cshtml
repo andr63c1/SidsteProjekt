@@ -1,4 +1,5 @@
-﻿@{
+﻿@model BookingSystem3.Models.Customer
+@{
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
@@ -9,20 +10,26 @@
     form {
         padding-left: 5%;
     }
+
     table input, table select, table textarea {
         width: 100%;
     }
 </style>
 
-<form>
+<form method="post">
     <table>
         <tr>
-            <td><label>Navn</label></td>
+            <td><label asp-for="customerID">BrugerID</label></td>
             <td><input type="text" /></td>
             <td><a>Rediger</a></td>
         </tr>
         <tr>
-            <td><label>Email</label></td>
+            <td><label asp-for="name">Navn</label></td>
+            <td><input type="text" /></td>
+            <td><a>Rediger</a></td>
+        </tr>
+        <tr>
+            <td><label asp-for="email">Email</label></td>
             <td><input type="email" /></td>
             <td><a>Rediger</a></td>
         </tr>
@@ -32,7 +39,7 @@
             <td><a>Rediger</a></td>
         </tr>
         <tr>
-            <td><label>Fakturerings oplysninger</label></td>
+            <td><label asp-for="userCredentials">Fakturerings oplysninger</label></td>
             <td><input type="text" /></td>
             <td><a>Rediger</a></td>
         </tr>
@@ -43,7 +50,8 @@
         </tr>
         <tr>
             <td><label>Rettigheder</label></td>
-            <td><select>
+            <td>
+                <select>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -53,5 +61,5 @@
         </tr>
     </table>
 
-    <input type="submit"/>
+    <input type="submit" class="submit" title="tilføj" />
 </form>
