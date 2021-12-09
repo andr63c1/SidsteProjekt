@@ -4,7 +4,7 @@
 }
 
 <h2>Tider</h2>
-<form method="post">
+<form role="form" method="post">
     <table class="booking table" style="width:100%">
         <tr>
             <th>Dato</th>
@@ -15,19 +15,19 @@
         </tr>
         <tr>
             <td>
-                <input type="date" name="dato" asp-for="date" />
+                <input type="date" asp-for="date" />
             </td>
             <td>
-                <input type="time" name="start" asp-for="start" />
+                <input type="time" asp-for="start" />
             </td>
             <td>
-                <input type="time" name="slut" asp-for="end" />
+                <input type="time" asp-for="end" />
             </td>
             <td>
-                <input type="number" name="pris" asp-for="standardPrice" />
+                <input type="text" asp-for="standardPrice" />
             </td>
             <td>
-                <input type="number" name="pris" asp-for="specialPrice" />
+                <input type="text" asp-for="specialPrice" />
             </td>
         </tr>
     </table>

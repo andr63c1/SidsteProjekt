@@ -17,11 +17,11 @@
     @foreach(TimeSlot timeslot in Model)
     {
         <tr>
-            <td>@timeslot.date.ToString()</td>
-            <td>@timeslot.start.ToString()</td>
-            <td>@timeslot.end.ToString()</td>
-            <td>@timeslot.standardPrice.ToString()</td>
-            <td>@timeslot.specialPrice.ToString()</td>
+            <td>@timeslot.date.ToString("dd-MM-yyyy")</td>
+            <td>@timeslot.start.ToString("HH:mm")</td>
+            <td>@timeslot.end.ToString("HH:mm")</td>
+            <td>@timeslot.standardPrice.ToString() DKK/t</td>
+            <td>@timeslot.specialPrice.ToString() DKK/t</td>
         </tr>
     }
 </table>
