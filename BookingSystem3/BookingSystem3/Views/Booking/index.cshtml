@@ -1,0 +1,157 @@
+﻿@model BookingSystem3.Models.Booking
+@{
+}
+<head>
+    <link rel="stylesheet" href="~/css/Calendar.css"/>
+</head>
+<h1>CSS Calendar</h1>
+<div class="bookingContainer">
+    <div class="calendar">
+        <div class="month">
+            <ul>
+                <li class="prev"><span class="arrow" style="cursor: pointer;" onclick="prevMonth()">&#10094;</span ></li>
+                <li class="next"><span class="arrow" style="cursor: pointer;" onclick="nextMonth()">&#10095;</span></li>
+                <li>
+                    <span id="month">August</span><br>
+                    <span id="year" style="font-size:18px">2021</span>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="weekdays">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+        </ul>
+        <ul style="cursor: pointer;" class="days">
+            
+        </ul>
+    </div>
+    <div class="dateInfo">
+        <div class="dateHeader">
+            <span id="dateLabel">Oktober 24.</span>
+        </div>
+        <div class="infoBox displayTimeSlots">
+
+            <table>
+                <tr>
+                    <td>Tid</td>
+                    <td>Pris</td>
+                </tr>
+                <tr>
+                    <td>Tid</td>
+                    <td>Pris</td>
+                </tr>
+                <tr>
+                    <td>Tid</td>
+                    <td>Pris</td>
+                </tr>
+            </table>
+        </div>
+        <div class="infoBox bookingForm">
+            <form role="form" method="post">
+                <input id="selectedDate" asp-for="date" type="date" style="display: none;"/>
+                <label>Start</label><br />
+                <input asp-for="startTime" type="time" /><br /><br />
+                <label>Varighed</label><br />
+                <select asp-for="duration">
+                    <option>15</option>
+                    <option>30</option>
+                    <option>45</option>
+                    <option>60</option>
+                    <option>120</option>
+                </select><br /><br />
+                <label>Emne</label><br />
+                <select asp-for="topic">
+                    <option>Microsoft Project</option>
+                    <option>Projekt styring</option>
+                    <option>Andet</option>
+                </select><br /><br />
+                <label>Kommentar</label><br />
+                <textarea asp-for="comment"></textarea><br /><br />
+                <input type="submit" class="submit" />
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    date = new Date();
+    DrawDates(date);
+
+    function SelectDate(clickedId) {
+        if (document.getElementsByClassName("active").length > 0) {
+            var oldEl = document.getElementsByClassName("active");
+            oldEl[0].classList = "";
+        }
+        
+        var el = document.getElementById(clickedId);
+        el.classList += "active";
+
+        date.setDate(clickedId);
+
+        var selectedDate = document.getElementById("selectedDate");
+        selectedDate.valueAsDate = date;
+
+        var options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+        document.getElementById("dateLabel").innerHTML = date.toLocaleString('default', options);
+    }
+
+    function DrawDates(date) {
+        removeDate();
+        var ul = document.getElementsByClassName("days")[0];
+        for (var d = 1; d <= daysInMonth(date.getMonth(), date.getYear() + 1900); d++) {
+            var li = document.createElement("li");
+            var span = document.createElement("span");
+            span.setAttribute("id", d);
+            span.setAttribute("class", "")
+            span.onclick = function () { SelectDate(this.id) };
+            span.innerHTML = d;
+            span.setAttribute("style", "cursor: pointer;");
+            li.appendChild(span);
+            ul.appendChild(li);
+        }
+        updateMonthYear();
+
+        var dateDay = parseInt(date.toLocaleString('default', { day: 'numeric' }));
+        SelectDate(dateDay);
+    }
+
+    function daysInMonth(month, year) {
+        return new Date(year, month +1, 0).getDate();
+    }
+
+    function prevMonth() {
+        date.setMonth(date.getMonth() - 1);
+        DrawDates(date);
+
+    }
+    function nextMonth() {
+        date.setMonth(date.getMonth() + 1);
+        DrawDates(date);
+        
+    } 
+
+    function updateMonthYear() {
+        var monthElement = document.getElementById("month");
+        const month = date.toLocaleString('default', { month: 'long' });
+        monthElement.innerHTML = month;
+        var yearElement = document.getElementById("year");
+        const year = date.getYear() + 1900;
+        yearElement.innerHTML = year;
+    }
+
+    function removeDate() {
+        var ul = document.getElementsByClassName("days")[0];
+        ul.innerHTML = "";
+    }
+
+</script>
+
+
+
