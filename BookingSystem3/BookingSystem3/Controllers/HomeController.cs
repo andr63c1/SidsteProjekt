@@ -20,6 +20,7 @@ namespace BookingSystem3.Controllers
 
         public IActionResult Index()
         {
+            _logger.Log(LogLevel.Information, "Testing Index Logging");
             return View();
         }
 

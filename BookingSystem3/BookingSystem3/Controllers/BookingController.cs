@@ -25,8 +25,7 @@ namespace BookingSystem3.Controllers
         public IActionResult Index(Booking booking)
         {
             //Add booking to database
-            _context.Bookings.Add(booking);
-            _context.SaveChanges();
+            _context.AddBooking(booking);
 
             return Index();
         }

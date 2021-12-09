@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,21 +9,38 @@ namespace BookingSystem3.Models
 {
     public class BookingContext : DbContext
     {
-        public BookingContext(DbContextOptions<BookingContext> options) : base(options)
+        private readonly ILogger<BookingContext> _logger;
+
+        public BookingContext(DbContextOptions<BookingContext> options, ILogger<BookingContext> logger) : base(options)
         {
+            _logger = logger;
             Database.EnsureCreated();
         }
 
-        public DbSet<Booking> Bookings { get; set; }
-        public DbSet<TimeSlot> TimeSlots { get; set; }
-        public DbSet<Customer> Customers { get; set; }
-        public DbSet<Employee> Employees { get; set; }
+        private DbSet<Booking> Bookings { get; set; }
+        private DbSet<TimeSlot> TimeSlots { get; set; }
+        private DbSet<Customer> Customers { get; set; }
+        private DbSet<Employee> Employees { get; set; }
 
         public Booking AddBooking(Booking booking)
         {
-            Bookings.Add(booking);
+            Booking _booking = Bookings.Add(booking).Entity;
             SaveChanges();
-            return booking;
+            _logger.Log(LogLevel.Information, "Booking Added with Id:" + _booking.bookingID.ToString());
+            return _booking;
+        }
+
+        public TimeSlot AddTimeSlot(TimeSlot timeSlot)
+        {
+            TimeSlot _timeSlot = TimeSlots.Add(timeSlot).Entity;
+            SaveChanges();
+            _logger.Log(LogLevel.Information, "TimeSlot Added with Id:" + _timeSlot.timeSlotID.ToString());
+            return _timeSlot;
+        }
+
+        public IEnumerable<TimeSlot> GetTimeSlots()
+        {
+            return TimeSlots;
         }
 
     }

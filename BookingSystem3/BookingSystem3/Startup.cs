@@ -13,6 +13,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BookingSystem3.Models;
+using Microsoft.Extensions.Logging;
+using System.IO;
 
 namespace BookingSystem3
 {
@@ -38,6 +40,30 @@ namespace BookingSystem3
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddLogging(loggingBuilder => {
+                var loggingSection = Configuration.GetSection("Logging");
+                loggingBuilder.AddFile(loggingSection);
+                loggingBuilder.AddProvider(new NReco.Logging.File.FileLoggerProvider("logs/app.js", true)
+                {
+                    FormatLogEntry = (msg) => {
+                        var sb = new System.Text.StringBuilder();
+                        StringWriter sw = new StringWriter(sb);
+                        var jsonWriter = new Newtonsoft.Json.JsonTextWriter(sw);
+                        jsonWriter.WriteStartArray();
+                        jsonWriter.WriteValue(DateTime.Now.ToString("o"));
+                        jsonWriter.WriteValue(msg.LogLevel.ToString());
+                        jsonWriter.WriteValue(msg.LogName);
+                        jsonWriter.WriteValue(msg.EventId.Id);
+                        jsonWriter.WriteValue(msg.Message);
+                        jsonWriter.WriteValue(msg.Exception?.ToString());
+                        jsonWriter.WriteEndArray();
+                        return sb.ToString();
+                    }
+                });
+            });
+
+            
 
             services.AddControllersWithViews();
             services.AddRazorPages();

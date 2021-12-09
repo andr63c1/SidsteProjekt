@@ -1,28 +1,35 @@
-﻿@{
+﻿@model BookingSystem3.Models.TimeSlot
+@{
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <h2>Tider</h2>
-<table class="booking table" style="width:100%">
-    <tr>
-        <th>Dato</th>
-        <th>Start</th>
-        <th>Slut</th>
-        <th>Pris</th>
-    </tr>
-    <tr>
-        <td>
-            <input type="text" name="dato"
-        </td>
-        <td>
-            <input type="text" name="start"
-        </td>
-        <td>
-            <input type="text" name="slut"
-        </td>
-        <td>
-            <input type="text" name="pris"
-        </td>
-    </tr>
-</table>
-<button>Tilføj</button>
+<form method="post">
+    <table class="booking table" style="width:100%">
+        <tr>
+            <th>Dato</th>
+            <th>Start</th>
+            <th>Slut</th>
+            <th>Pris</th>
+            <th>Tilbuds Pris</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="date" name="dato" asp-for="date" />
+            </td>
+            <td>
+                <input type="time" name="start" asp-for="start" />
+            </td>
+            <td>
+                <input type="time" name="slut" asp-for="end" />
+            </td>
+            <td>
+                <input type="number" name="pris" asp-for="standardPrice" />
+            </td>
+            <td>
+                <input type="number" name="pris" asp-for="specialPrice" />
+            </td>
+        </tr>
+    </table>
+    <input type="submit" class="submit" title="Tilføj"/>
+</form>
