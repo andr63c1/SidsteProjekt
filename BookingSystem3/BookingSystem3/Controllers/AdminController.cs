@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BookingSystem3.Controllers
 {
-    
+
     public class AdminController : Controller
     {
         private readonly BookingContext _context;
@@ -22,20 +22,20 @@ namespace BookingSystem3.Controllers
 
         public IActionResult Bookinger()
         {
-            return View();
+            return View(_context.GetBookings());
         }
 
-       
+
         public IActionResult Brugere()
         {
             return View(_context.GetUser());
         }
-       
+
         public IActionResult Log()
         {
             return View();
         }
-       
+
         public IActionResult Tider()
         {
             return View(_context.GetTimeSlots());
@@ -57,9 +57,17 @@ namespace BookingSystem3.Controllers
             return View(_context.GetUser(id));
         }
 
-        public IActionResult EditBooking()
+        [HttpGet("/Admin/EditBooking/{id}")]
+        public IActionResult EditBooking(int id)
         {
-            return View();
+            return View(_context.GetBooking(id));
+        }
+
+        [HttpPost]
+        public IActionResult EditBooking(Booking booking)
+        {
+            _context.EditBooking(booking);
+            return Redirect("/Admin/Bookinger");
         }
     }
 

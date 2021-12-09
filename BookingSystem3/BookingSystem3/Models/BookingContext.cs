@@ -55,10 +55,28 @@ namespace BookingSystem3.Models
         {
             return Customers;
         }
+
         public Customer GetUser(int id)
         {
             return Customers.Single(x => x.customerID == id);
         }
 
+        public IEnumerable<Booking> GetBookings()
+        {
+            return Bookings;
+        }
+        
+        public Booking GetBooking(int id)
+        {
+            return Bookings.Single(x => x.bookingID == id);
+        }
+
+        public Booking EditBooking(Booking booking)
+        {
+            this.Update(booking);
+            SaveChanges();
+
+            return booking;
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<BookingSystem3.Models.Booking>
+@{
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
@@ -16,26 +17,18 @@
         <th>Firma</th>
         <th></th>
     </tr>
-    <tr>
-        <td>Alfreds Futterkiste</td>
-        <td>Maria Anders</td>
-        <td>Germany</td>
-        <td>Alfreds Futterkiste</td>
-        <td>Maria Anders</td>
-        <td>Germany</td>
-        <td>Alfreds Futterkiste</td>
-        <td>Germany</td>
-        <td><button>Læs Mere</button></td>
-    </tr>
-    <tr>
-        <td>Alfreds Futterkiste</td>
-        <td>Maria Anders</td>
-        <td>Germany</td>
-        <td>Alfreds Futterkiste</td>
-        <td>Maria Anders</td>
-        <td>Germany</td>
-        <td>Alfreds Futterkiste</td>
-        <td>Germany</td>
-        <td><button>Læs Mere</button></td>
-    </tr>
+    @foreach(Booking booking in Model)
+    {
+        <tr>
+            <td>@booking.date.ToString()</td>
+            <td>@booking.startTime.ToString()</td>
+            <td>@booking.startTime.AddMinutes(booking.duration).ToString() </td>
+            <td>Customer</td>
+            <td>@booking.status.ToString()</td>
+            <td>@booking.topic</td>
+            <td>Employee</td>
+            <td>Company</td>
+            <td><a class="button" href="/Admin/EditBooking/@booking.bookingID">Læs mere</a></td>
+        </tr>
+    }
 </table>

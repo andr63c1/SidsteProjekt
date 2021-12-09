@@ -1,4 +1,5 @@
-﻿@{
+﻿@model BookingSystem3.Models.Booking
+@{
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
@@ -14,36 +15,37 @@
     }
 </style>
 
-<form>
+<form method="post">
+    <input type="hidden" value="@Model.bookingID" asp-for="bookingID"/>
     <table>
         <tr>
             <td><label>Ansvarlig</label></td>
-            <td><input type="text" /></td>
+            <td><input type="text" />Employee</td>
             <td><a>Rediger</a></td>
         </tr>
         <tr>
             <td><label>Dato</label></td>
-            <td><input type="date" /></td>
+            <td><input type="date" value="@Model.date" asp-for="date"/></td>
             <td><a>Rediger</a></td>
         </tr>
         <tr>
             <td><label>Start</label></td>
-            <td><input type="time" /></td>
+            <td><input type="time" value="@Model.startTime" asp-for="startTime"/></td>
             <td><a>Rediger</a></td>
         </tr>
         <tr>
             <td><label>Slut</label></td>
-            <td><input type="time" /></td>
+            <td><input type="time" value="@Model.startTime.AddMinutes(Model.duration)" asp-for="duration"/></td>
             <td><a>Rediger</a></td>
         </tr>
         <tr>
             <td><label>Repræsentant</label></td>
-            <td><input type="text" /></td>
+            <td><input type="text" />Customer</td>
             <td><a>Rediger</a></td>
         </tr>
         <tr>
             <td><label>Firma</label></td>
-            <td><input type="text" /></td>
+            <td><input type="text" />Company</td>
             <td><a>Rediger</a></td>
         </tr>
         <tr>
@@ -60,17 +62,17 @@
         <tr>
             <td><label>Emne</label></td>
             <td>
-                <select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
+                <select asp-for="topic">
+                    <option>Microsoft Project</option>
+                    <option>Projekt styring</option>
+                    <option>Andet</option>
                 </select>
             </td>
             <td><a>Rediger</a></td>
         </tr>
         <tr>
             <td>Kommentarer</td>
-            <td><textarea placeholder="Kommentarer"></textarea></td>
+            <td><textarea placeholder="Kommentarer" asp-for="comment">@Model.comment</textarea></td>
             <td><a>Rediger</a></td>
         </tr>
     </table>
