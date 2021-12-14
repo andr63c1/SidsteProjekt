@@ -28,7 +28,7 @@ namespace BookingSystem3.Controllers
 
         public IActionResult Brugere()
         {
-            return View(_context.GetUser());
+            return View(_context.GetUsers());
         }
 
         public IActionResult Log()

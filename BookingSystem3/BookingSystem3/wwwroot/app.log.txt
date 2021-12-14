@@ -393,3 +393,94 @@ Error Number:207,State:1,Class:16
 2021-12-10T09:22:21.8731968+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
 2021-12-10T09:22:21.8748459+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
 2021-12-10T09:22:22.0703827+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-14T10:53:38.7654202+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-14T10:53:38.8083804+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-14T10:53:38.8098626+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: C:\Users\thoma\Github\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-14T10:53:38.9432484+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-14T10:53:48.8106588+01:00	FAIL	[Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]	[UnhandledException]	An unhandled exception has occurred while executing the request.System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'BookingSystem3.Models.Customer', but this ViewDataDictionary instance requires a model item of type 'System.Collections.Generic.IEnumerable`1[BookingSystem3.Models.Customer]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2021-12-14T10:55:31.4045196+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-14T10:55:31.4476455+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-14T10:55:31.4489750+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: C:\Users\thoma\Github\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-14T10:55:31.5759852+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-14T10:57:56.3067587+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-14T10:57:56.3488481+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-14T10:57:56.3501131+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: C:\Users\thoma\Github\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-14T10:57:56.4763910+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-14T11:10:22.4775076+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-14T11:10:22.5215900+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-14T11:10:22.5228532+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: C:\Users\thoma\Github\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-14T11:10:22.6257320+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-14T11:12:40.2459676+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-14T11:12:40.2884399+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-14T11:12:40.2894744+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: C:\Users\thoma\Github\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-14T11:12:40.3918638+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-14T11:14:43.2379826+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-14T11:14:43.2820840+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-14T11:14:43.2836647+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: C:\Users\thoma\Github\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-14T11:14:43.3872405+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-14T11:20:12.9122089+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-14T11:20:12.9529673+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-14T11:20:12.9541707+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: C:\Users\thoma\Github\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-14T11:20:13.0565566+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-14T11:23:58.4183085+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-14T11:23:58.4745308+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-14T11:23:58.4757453+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: C:\Users\thoma\Github\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-14T11:23:58.6031519+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-14T11:49:15.7465904+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-14T11:49:15.7906741+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-14T11:49:15.7920616+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: C:\Users\thoma\Github\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-14T11:49:15.8917370+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-14T11:57:13.7745970+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-14T11:57:13.8165308+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-14T11:57:13.8176626+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: C:\Users\thoma\Github\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-14T11:57:13.9207822+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-14T11:59:30.9791532+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-14T11:59:31.0225068+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-14T11:59:31.0237207+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: C:\Users\thoma\Github\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-14T11:59:31.1306267+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-14T12:03:32.5177189+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-14T12:03:32.5619526+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-14T12:03:32.5633333+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: C:\Users\thoma\Github\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-14T12:03:32.6895729+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-14T12:05:36.4111246+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-14T12:05:36.4557669+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-14T12:05:36.4570883+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: C:\Users\thoma\Github\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-14T12:05:36.5607287+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-14T12:37:13.9998893+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-14T12:37:14.0420749+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-14T12:37:14.0436059+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: C:\Users\thoma\Github\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-14T12:37:14.1788125+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
