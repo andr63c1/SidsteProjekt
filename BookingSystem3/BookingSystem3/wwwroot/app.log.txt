@@ -377,3 +377,19 @@ Error Number:207,State:1,Class:16
 2021-12-09T15:19:23.3619257+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
 2021-12-09T15:19:23.3632922+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: C:\Users\thoma\Github\SidsteProjekt\BookingSystem3\BookingSystem3
 2021-12-09T15:19:23.4989286+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-10T09:14:19.7996855+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-10T09:14:19.9947867+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-10T09:14:19.9970206+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-10T09:14:20.3230074+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-10T09:19:42.2761514+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-10T09:19:42.3328614+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-10T09:19:42.3345365+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-10T09:19:42.5390667+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-10T09:21:50.5556423+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-10T09:21:50.6091181+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-10T09:21:50.6106550+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-10T09:21:50.8180147+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-10T09:22:21.8100809+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-10T09:22:21.8731968+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-10T09:22:21.8748459+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-10T09:22:22.0703827+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging

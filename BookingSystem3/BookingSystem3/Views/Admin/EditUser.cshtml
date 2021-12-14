@@ -19,18 +19,18 @@
 <form method="post">
     <table>
         <tr>
-            <td><label asp-for="customerID">BrugerID</label></td>
-            <td><input type="text" /></td>
+            <td><label >BrugerID</label></td>
+            <td><input asp-for="customerID" type="text"  value="@Model.customerID"/></td>
             <td><a>Rediger</a></td>
         </tr>
         <tr>
-            <td><label asp-for="name">Navn</label></td>
-            <td><input type="text" /></td>
+            <td><label >Navn</label></td>
+            <td><input asp-for="name" type="text" value="@Model.name"/></td>
             <td><a>Rediger</a></td>
         </tr>
         <tr>
-            <td><label asp-for="email">Email</label></td>
-            <td><input type="email" /></td>
+            <td><label >Email</label></td>
+            <td><input asp-for="email" type="email" value="@Model.email"/></td>
             <td><a>Rediger</a></td>
         </tr>
         <tr>
@@ -39,13 +39,13 @@
             <td><a>Rediger</a></td>
         </tr>
         <tr>
-            <td><label asp-for="userCredentials">Fakturerings oplysninger</label></td>
+            <td><label >Fakturerings oplysninger</label></td>
             <td><input type="text" /></td>
             <td><a>Rediger</a></td>
         </tr>
         <tr>
             <td><label>Firma</label></td>
-            <td><input type="text" /></td>
+            <td><input asp-for="company" type="text" value="@Model.company"/></td>
             <td><a>Rediger</a></td>
         </tr>
         <tr>

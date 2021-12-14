@@ -57,6 +57,13 @@ namespace BookingSystem3.Controllers
             return View(_context.GetUser(id));
         }
 
+        [HttpPost]
+        public IActionResult EditUser(Customer customer)
+        {
+            _context.EditUser(customer);
+            return Redirect("/Admin/Brugere");
+        }
+
         [HttpGet("/Admin/EditBooking/{id}")]
         public IActionResult EditBooking(int id)
         {
