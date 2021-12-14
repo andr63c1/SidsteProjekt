@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BookingSystem3.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,5 +14,6 @@ namespace BookingSystem3.Models
         public DateTime end { get; set; }
         public float standardPrice { get; set; }
         public float specialPrice { get; set; }
+        public ApplicationUser creater { get; set; }
     }
 }

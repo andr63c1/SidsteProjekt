@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BookingSystem3.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -15,5 +16,8 @@ namespace BookingSystem3.Models
         public float duration { get; set; }
         public string topic { get; set; }
         public string comment { get; set; }
+        public TimeSlot timeSlot { get; set; }
+        public ApplicationUser creater { get; set; }
+
     }
 }

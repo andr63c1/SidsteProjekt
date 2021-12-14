@@ -12,17 +12,21 @@
         <th>Slut</th>
         <th>Pris</th>
         <th>Tilbuds Pris</th>
+        <th></th>
+        <th></th>
 
     </tr>
     @foreach(TimeSlot timeslot in Model)
     {
-        <tr>
-            <td>@timeslot.date.ToString("dd-MM-yyyy")</td>
-            <td>@timeslot.start.ToString("HH:mm")</td>
-            <td>@timeslot.end.ToString("HH:mm")</td>
-            <td>@timeslot.standardPrice.ToString() DKK/t</td>
-            <td>@timeslot.specialPrice.ToString() DKK/t</td>
-        </tr>
+<tr>
+    <td>@timeslot.date.ToString("dd-MM-yyyy")</td>
+    <td>@timeslot.start.ToString("HH:mm")</td>
+    <td>@timeslot.end.ToString("HH:mm")</td>
+    <td>@timeslot.standardPrice.ToString() DKK/t</td>
+    <td>@timeslot.specialPrice.ToString() DKK/t</td>
+    <td><a href="/Admin/EditTimeSlot/@timeslot.timeSlotID">Rediger</a></td>
+    <td><a href="/Admin/DeleteTimeSlot/@timeslot.timeSlotID">Slet</a></td>
+</tr>
     }
 </table>
 <a asp-controller="Admin" asp-action="AddTid">Tilføj tid</a>

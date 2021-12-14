@@ -28,7 +28,7 @@ namespace BookingSystem3.Controllers
 
         public IActionResult Brugere()
         {
-            return View(_context.GetUser());
+            return View(_context.GetUsers());
         }
 
         public IActionResult Log()
@@ -57,6 +57,19 @@ namespace BookingSystem3.Controllers
             return View(_context.GetUser(id));
         }
 
+        [HttpGet("/Admin/EditTimeSlot/{id}")]
+        public IActionResult EditTimeSlot(int id)
+        {
+            return View(_context.GetTimeSlot(id));
+        }
+
+        [HttpPost]
+        public IActionResult EditTimeSlot(TimeSlot timeSlot)
+        {
+            _context.EditTimeSlot(timeSlot);
+            return Redirect("/Admin/Tider");
+        }
+
         [HttpPost]
         public IActionResult EditUser(Customer customer)
         {
@@ -75,6 +88,27 @@ namespace BookingSystem3.Controllers
         {
             _context.EditBooking(booking);
             return Redirect("/Admin/Bookinger");
+        }
+
+        [HttpGet("/Admin/DeleteBooking/{id}")]
+        public IActionResult DeleteBooking(int id)
+        {
+            _context.DeleteBooking(_context.GetBooking(id));
+            return Redirect("/Admin/Bookinger");
+        }
+
+        [HttpGet("/Admin/DeleteUser/{id}")]
+        public IActionResult DeleteUser(int id)
+        {
+            _context.DeleteUser(_context.GetUser(id));
+            return Redirect("/Admin/Brugere");
+        }
+
+        [HttpGet("/Admin/DeleteTimeSlot/{id}")]
+        public IActionResult DeleteTimeSlot(int id)
+        {
+            _context.DeleteTimeSlot(_context.GetTimeSlot(id));
+            return Redirect("/Admin/Tider");
         }
     }
 

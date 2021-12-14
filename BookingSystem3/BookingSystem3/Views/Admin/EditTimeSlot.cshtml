@@ -1,0 +1,49 @@
+﻿@model BookingSystem3.Models.TimeSlot
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Rediger Tid</h2>
+
+
+<style>
+    form {
+        padding-left: 5%;
+    }
+
+    table input, table select, table textarea {
+        width: 100%;
+    }
+</style>
+
+<h2>Tider</h2>
+<form role="form" method="post">
+    <input type="hidden" value="@Model.timeSlotID" asp-for="timeSlotID"/>
+    <table class="booking table" style="width:100%">
+        <tr>
+            <th>Dato</th>
+            <th>Start</th>
+            <th>Slut</th>
+            <th>Pris</th>
+            <th>Tilbuds Pris</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="date" asp-for="date" />
+            </td>
+            <td>
+                <input type="time" asp-for="start" />
+            </td>
+            <td>
+                <input type="time" asp-for="end" />
+            </td>
+            <td>
+                <input type="text" asp-for="standardPrice" />
+            </td>
+            <td>
+                <input type="text" asp-for="specialPrice" />
+            </td>
+        </tr>
+    </table>
+    <input type="submit" class="submit" title="Gem ændringer" />
+</form>

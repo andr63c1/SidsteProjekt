@@ -12,17 +12,20 @@
         <th>Telefon</th>
         <th>Password</th>
         <th>Firma</th>
+        <th></th>
+        <th></th>
 
     </tr>
     @foreach (Customer user in Model)
     {
-        <tr>
-            <td>@user.name.ToString()</td>
-            <td>@user.email.ToString()</td>
-            <td>12345678</td>
-            <td>@user.userCredentials.ToString()</td>
-            <td>@user.company</td>
-            <td><a href="/admin/editUser/@user.customerID">Læs mere</a></td>
-        </tr>
+    <tr>
+        <td>@user.name.ToString()</td>
+        <td>@user.email.ToString()</td>
+        <td>12345678</td>
+        <td>@user.userCredentials.ToString()</td>
+        <td>@user.company</td>
+        <td><a href="/admin/editUser/@user.customerID">Læs mere</a></td>
+        <td><a href="/admin/deleteUser/@user.customerID">Slet</a></td>
+    </tr>
     }
 </table>

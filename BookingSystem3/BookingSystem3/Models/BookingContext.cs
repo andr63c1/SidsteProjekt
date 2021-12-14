@@ -51,6 +51,19 @@ namespace BookingSystem3.Models
             return user;
         }
 
+        public TimeSlot GetTimeSlot(int id)
+        {
+            return TimeSlots.Single(x => x.timeSlotID == id);
+        }
+
+        public TimeSlot EditTimeSlot(TimeSlot timeSlot)
+        {
+            this.Update(timeSlot);
+            SaveChanges();
+
+            return timeSlot;
+        }
+
         public IEnumerable<Customer> GetUsers()
         {
             return Customers;
@@ -77,6 +90,30 @@ namespace BookingSystem3.Models
             SaveChanges();
 
             return booking;
+        }
+
+        public Booking DeleteBooking(Booking booking)
+        {
+            this.Remove(booking);
+            SaveChanges();
+
+            return booking;
+        }
+
+        public Customer DeleteUser(Customer user)
+        {
+            this.Remove(user);
+            SaveChanges();
+
+            return user;
+        }
+
+        public TimeSlot DeleteTimeSlot(TimeSlot timeSlot)
+        {
+            this.Remove(timeSlot);
+            SaveChanges();
+
+            return timeSlot;
         }
     }
 }

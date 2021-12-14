@@ -16,19 +16,21 @@
         <th>Ansat</th>
         <th>Firma</th>
         <th></th>
+        <th></th>
     </tr>
     @foreach(Booking booking in Model)
     {
         <tr>
-            <td>@booking.date.ToString()</td>
-            <td>@booking.startTime.ToString()</td>
-            <td>@booking.startTime.AddMinutes(booking.duration).ToString() </td>
-            <td>Customer</td>
+            <td>@booking.date.ToString("dd-MM-yyyy")</td>
+            <td>@booking.startTime.ToString("HH:mm")</td>
+            <td>@booking.startTime.AddMinutes(booking.duration).ToString("HH:mm") </td>
+            <td></td>
             <td>@booking.status.ToString()</td>
             <td>@booking.topic</td>
-            <td>Employee</td>
-            <td>Company</td>
+            <td></td>
+            <td></td>
             <td><a class="button" href="/Admin/EditBooking/@booking.bookingID">Læs mere</a></td>
+            <td><a class="button" href="/Admin/DeleteBooking/@booking.bookingID">Slet</a></td>
         </tr>
     }
 </table>

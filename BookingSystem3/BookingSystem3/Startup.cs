@@ -38,7 +38,8 @@ namespace BookingSystem3
                 options.UseSqlServer(
                     Configuration.GetConnectionString("BookingConnection")));
 
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddLogging(loggingBuilder => {
