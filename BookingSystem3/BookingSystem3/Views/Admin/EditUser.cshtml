@@ -21,43 +21,36 @@
         <tr>
             <td><label >BrugerID</label></td>
             <td><input asp-for="customerID" type="text"  value="@Model.customerID"/></td>
-            <td><a>Rediger</a></td>
         </tr>
         <tr>
             <td><label >Navn</label></td>
             <td><input asp-for="name" type="text" value="@Model.name"/></td>
-            <td><a>Rediger</a></td>
         </tr>
         <tr>
             <td><label >Email</label></td>
             <td><input asp-for="email" type="email" value="@Model.email"/></td>
-            <td><a>Rediger</a></td>
         </tr>
         <tr>
             <td><label>Tlf</label></td>
             <td><input type="tel" /></td>
-            <td><a>Rediger</a></td>
         </tr>
         <tr>
             <td><label >Fakturerings oplysninger</label></td>
             <td><input type="text" /></td>
-            <td><a>Rediger</a></td>
         </tr>
         <tr>
             <td><label>Firma</label></td>
             <td><input asp-for="company" type="text" value="@Model.company"/></td>
-            <td><a>Rediger</a></td>
         </tr>
         <tr>
             <td><label>Rettigheder</label></td>
             <td>
-                <select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
+                <select asp-for="userCredentials" typeof="text" value="@Model.userCredentials" form="userCredentials">
+                    <option value="Godkendt">Godkendt</option>
+                    <option value="IkkeGodkendt">Ikke godkendt</option>
+                    <option value="Ansat">Ansat</option>
                 </select>
             </td>
-            <td><a>Rediger</a></td>
         </tr>
     </table>
 
