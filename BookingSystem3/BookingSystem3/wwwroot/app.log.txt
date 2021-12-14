@@ -1434,3 +1434,21 @@ Error Number:207,State:1,Class:16
 2021-12-14T12:37:14.0420749+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
 2021-12-14T12:37:14.0436059+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: C:\Users\thoma\Github\SidsteProjekt\BookingSystem3\BookingSystem3
 2021-12-14T12:37:14.1788125+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-14T18:25:58.6000694+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-14T18:25:58.6584945+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-14T18:25:58.6602156+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-14T18:25:58.9073878+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-14T18:32:23.2054151+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-14T18:32:23.2578847+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-14T18:32:23.2593016+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-14T18:32:23.4517122+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-14T18:51:38.1060848+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-14T18:51:38.1622649+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-14T18:51:38.1636094+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-14T18:51:38.3461887+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-14T18:51:55.2089945+01:00	WARN	[Microsoft.AspNetCore.Identity.UserManager]	[0]	Invalid password for user 9e112d96-715a-4949-99b1-42ce39d11c31.
+2021-12-14T18:51:55.2111410+01:00	WARN	[Microsoft.AspNetCore.Identity.SignInManager]	[2]	User 9e112d96-715a-4949-99b1-42ce39d11c31 failed to provide the correct password.
+2021-12-14T18:52:06.0629324+01:00	WARN	[Microsoft.AspNetCore.Identity.UserManager]	[0]	Invalid password for user 9e112d96-715a-4949-99b1-42ce39d11c31.
+2021-12-14T18:52:06.0648153+01:00	WARN	[Microsoft.AspNetCore.Identity.SignInManager]	[2]	User 9e112d96-715a-4949-99b1-42ce39d11c31 failed to provide the correct password.
+2021-12-14T18:52:25.3556307+01:00	INFO	[BookingSystem3.Areas.Identity.Pages.Account.LoginModel]	[0]	User logged in.
+2021-12-14T18:52:25.3886481+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
