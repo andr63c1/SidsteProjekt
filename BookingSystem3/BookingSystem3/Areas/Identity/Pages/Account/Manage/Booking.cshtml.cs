@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 using BookingSystem3.Data;
 using Microsoft.AspNetCore.Identity;
@@ -10,12 +10,12 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace BookingSystem3.Areas.Identity.Pages.Account.Manage
 {
-    public partial class IndexModel : PageModel
+    public partial class BookingModel : PageModel
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
 
-        public IndexModel(
+        public BookingModel(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager)
         {
@@ -33,26 +33,30 @@ namespace BookingSystem3.Areas.Identity.Pages.Account.Manage
 
         public class InputModel
         {
-            [Phone]
-            [Display(Name = "Phone number")]
-            public string PhoneNumber { get; set; }
+            [Display(Name = "Standard price")]
+            public float StandardPrice { get; set; }
 
-            [Display(Name = "Comany name")]
-            public string Company { get; set; }
+            [Display(Name = "Max bookings")]
+            public int MaxBookings { get; set; }
+
+            [Display(Name = "VAT number")]
+            public string VATNumber { get; set; }
         }
 
         private async Task LoadAsync(ApplicationUser user)
         {
             var userName = await _userManager.GetUserNameAsync(user);
-            var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
-            var companyName = user.Company;
+            var standardPrice = user.StandardPrice;
+            var maxBookings = user.MaxBookings;
+            var vatNumber = user.VATNumber;
 
             Username = userName;
 
             Input = new InputModel
             {
-                PhoneNumber = phoneNumber,
-                Company = companyName
+                StandardPrice = standardPrice,
+                MaxBookings = maxBookings,
+                VATNumber = vatNumber
             };
         }
 
@@ -82,21 +86,24 @@ namespace BookingSystem3.Areas.Identity.Pages.Account.Manage
                 return Page();
             }
 
-            var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
-            if (Input.PhoneNumber != phoneNumber)
+            var standardPrice = user.StandardPrice;
+            if (Input.StandardPrice != standardPrice)
             {
-                var setPhoneResult = await _userManager.SetPhoneNumberAsync(user, Input.PhoneNumber);
-                if (!setPhoneResult.Succeeded)
-                {
-                    StatusMessage = "Unexpected error when trying to set phone number.";
-                    return RedirectToPage();
-                }
+                user.StandardPrice = Input.StandardPrice;
+                await _userManager.UpdateAsync(user);
             }
 
-            var companyName = user.Company;
-            if(Input.Company != companyName)
+            var maxBookings = user.MaxBookings;
+            if (Input.MaxBookings != maxBookings)
             {
-                user.Company = Input.Company;
+                user.MaxBookings = Input.MaxBookings;
+                await _userManager.UpdateAsync(user);
+            }
+
+            var vatNumber = user.VATNumber;
+            if (Input.VATNumber != vatNumber)
+            {
+                user.VATNumber = Input.VATNumber;
                 await _userManager.UpdateAsync(user);
             }
 
