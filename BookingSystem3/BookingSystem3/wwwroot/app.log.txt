@@ -1452,6 +1452,7 @@ Error Number:207,State:1,Class:16
 2021-12-14T18:52:06.0648153+01:00	WARN	[Microsoft.AspNetCore.Identity.SignInManager]	[2]	User 9e112d96-715a-4949-99b1-42ce39d11c31 failed to provide the correct password.
 2021-12-14T18:52:25.3556307+01:00	INFO	[BookingSystem3.Areas.Identity.Pages.Account.LoginModel]	[0]	User logged in.
 2021-12-14T18:52:25.3886481+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+<<<<<<< Updated upstream
 2021-12-15T09:05:10.5774101+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
 2021-12-15T09:05:10.6307175+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
 2021-12-15T09:05:10.6318402+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: C:\Users\thoma\Github\SidsteProjekt\BookingSystem3\BookingSystem3
@@ -2017,3 +2018,15 @@ CREATE DATABASE [BookingSystem];
 2021-12-15T10:02:32.5457287+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
 2021-12-15T10:02:32.5469691+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: C:\Users\thoma\Github\SidsteProjekt\BookingSystem3\BookingSystem3
 2021-12-15T10:02:32.7524300+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+=======
+2021-12-15T09:09:12.0163181+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-15T09:09:12.1753098+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-15T09:09:12.1774454+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-15T09:09:12.4703421+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-15T09:27:47.2759307+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-15T09:27:47.3323761+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-15T09:27:47.3341375+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-15T09:27:47.5451955+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-15T09:27:59.5037259+01:00	INFO	[BookingSystem3.Areas.Identity.Pages.Account.LoginModel]	[0]	User logged in.
+2021-12-15T09:27:59.5497284+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+>>>>>>> Stashed changes
