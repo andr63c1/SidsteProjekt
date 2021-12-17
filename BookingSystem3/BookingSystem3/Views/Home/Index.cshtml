@@ -1,8 +1,28 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@using BookingSystem3.Data
+@inject SignInManager<ApplicationUser> SignInManager
+@{
     ViewData["Title"] = "Home Page";
 }
 
+@if (SignInManager.IsSignedIn(User))
+{
+    <div class="text-center">
+        <h1 class="display-4">Velkommen</h1>
+        <p><b id="ManglerDuEnKonsulent">Mangler du en konsulent?</b></p>
+
+        <input id="BookButton" type="button" value="Book nu" onclick="location.href='/Booking'" />
+
+    </div>
+}
+else
+{
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Velkommen</h1>
+    <p><b id="ManglerDuEnKonsulent">Ønsker du at booke en konsulent, skal du logge ind først. Har du ikke en konto? Skal du blot registrer dig.</b></p>
+
+    <input id="BookButton" type="button" value="Login" onclick="location.href='/Identity/Account/Login'" />
+    <input id="BookButton" type="button" value="Registrer" onclick="location.href='/Identity/Account/Register'" />
+
 </div>
+}

@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace BookingSystem3.Data.Migrations
+namespace BookingSystem3.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20211215094840_BookingUserInfo")]
-    partial class BookingUserInfo
+    [Migration("20211216124259_ApplicationDbContextMigration")]
+    partial class ApplicationDbContextMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -85,7 +85,7 @@ namespace BookingSystem3.Data.Migrations
                         .HasColumnType("nvarchar(256)")
                         .HasMaxLength(256);
 
-                    b.Property<string>("VATnumber")
+                    b.Property<string>("VATNumber")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

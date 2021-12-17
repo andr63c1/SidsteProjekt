@@ -19,8 +19,6 @@ namespace BookingSystem3.Models
 
         private DbSet<Booking> Bookings { get; set; }
         private DbSet<TimeSlot> TimeSlots { get; set; }
-        private DbSet<Customer> Customers { get; set; }
-        private DbSet<Employee> Employees { get; set; }
 
         public Booking AddBooking(Booking booking)
         {
@@ -62,16 +60,6 @@ namespace BookingSystem3.Models
             SaveChanges();
 
             return timeSlot;
-        }
-
-        public IEnumerable<Customer> GetUsers()
-        {
-            return Customers;
-        }
-
-        public Customer GetUser(int id)
-        {
-            return Customers.Single(x => x.customerID == id);
         }
 
         public IEnumerable<Booking> GetBookings()

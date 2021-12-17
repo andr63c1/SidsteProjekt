@@ -1,4 +1,5 @@
-﻿@model BookingSystem3.Models.Customer
+﻿@using BookingSystem3.Data
+@model ApplicationUser
 @{
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
@@ -19,33 +20,41 @@
 <form method="post">
     <table>
         <tr>
-            <td><label >BrugerID</label></td>
-            <td><input asp-for="customerID" type="text"  value="@Model.customerID"/></td>
+            <td><label>BrugerID</label></td>
+            <td><input asp-for="Id" type="text" value="@Model.Id" /></td>
         </tr>
         <tr>
-            <td><label >Navn</label></td>
-            <td><input asp-for="name" type="text" value="@Model.name"/></td>
+            <td><label>Navn</label></td>
+            <td><input asp-for="UserName" type="text" value="@Model.UserName" /></td>
         </tr>
         <tr>
-            <td><label >Email</label></td>
-            <td><input asp-for="email" type="email" value="@Model.email"/></td>
+            <td><label>Email</label></td>
+            <td><input asp-for="Email" type="email" value="@Model.Email" /></td>
         </tr>
         <tr>
             <td><label>Tlf</label></td>
-            <td><input type="tel" /></td>
+            <td><input type="tel" asp-for="PhoneNumber" value="@Model.PhoneNumber " /></td>
         </tr>
         <tr>
-            <td><label >Fakturerings oplysninger</label></td>
-            <td><input type="text" /></td>
+            <td><label>Moms nummer</label></td>
+            <td><input type="text" asp-for="VATNumber" value="@Model.VATNumber" /></td>
+        </tr>
+        <tr>
+            <td><label>Standard Pris</label></td>
+            <td><input type="text" asp-for="StandardPrice" value="@Model.StandardPrice" /></td>
+        </tr>
+        <tr>
+            <td><label>Max Bookinger</label></td>
+            <td><input type="text" asp-for="MaxBookings" value="@Model.MaxBookings" /></td>
         </tr>
         <tr>
             <td><label>Firma</label></td>
-            <td><input asp-for="company" type="text" value="@Model.company"/></td>
+            <td><input asp-for="Company" type="text" value="@Model.Company" /></td>
         </tr>
         <tr>
             <td><label>Rettigheder</label></td>
             <td>
-                <select asp-for="userCredentials" typeof="text" value="@Model.userCredentials" form="userCredentials">
+                <select typeof="text" value="" form="userCredentials">
                     <option value="Godkendt">Godkendt</option>
                     <option value="IkkeGodkendt">Ikke godkendt</option>
                     <option value="Ansat">Ansat</option>

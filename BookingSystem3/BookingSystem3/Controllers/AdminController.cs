@@ -1,4 +1,5 @@
-﻿using BookingSystem3.Models;
+﻿using BookingSystem3.Data;
+using BookingSystem3.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,10 +11,10 @@ namespace BookingSystem3.Controllers
 
     public class AdminController : Controller
     {
-        private readonly BookingContext _context;
-        public AdminController(BookingContext context)
+        private readonly ApplicationDbContext _appContext;
+        public AdminController(ApplicationDbContext appContext)
         {
-            _context = context;
+            _appContext = appContext;
         }
         public IActionResult Index()
         {
@@ -22,13 +23,13 @@ namespace BookingSystem3.Controllers
 
         public IActionResult Bookinger()
         {
-            return View(_context.GetBookings());
+            return View(_appContext.GetBookings());
         }
 
 
         public IActionResult Brugere()
         {
-            return View(_context.GetUsers());
+            return View(_appContext.GetUsers());
         }
 
         public IActionResult Log()
@@ -38,7 +39,7 @@ namespace BookingSystem3.Controllers
 
         public IActionResult Tider()
         {
-            return View(_context.GetTimeSlots());
+            return View(_appContext.GetTimeSlots());
         }
         public IActionResult AddTid()
         {
@@ -48,66 +49,66 @@ namespace BookingSystem3.Controllers
         [HttpPost]
         public IActionResult AddTid(TimeSlot timeSlot)
         {
-            _context.AddTimeSlot(timeSlot);
+            _appContext.AddTimeSlot(timeSlot);
             return Redirect("/Admin/Tider"); ;
         }
         [HttpGet("/Admin/EditUser/{id}")]
-        public IActionResult EditUser(int id)
+        public IActionResult EditUser(string id)
         {
-            return View(_context.GetUser(id));
+            return View(_appContext.GetUser(id));
         }
 
         [HttpGet("/Admin/EditTimeSlot/{id}")]
         public IActionResult EditTimeSlot(int id)
         {
-            return View(_context.GetTimeSlot(id));
+            return View(_appContext.GetTimeSlot(id));
         }
 
         [HttpPost]
         public IActionResult EditTimeSlot(TimeSlot timeSlot)
         {
-            _context.EditTimeSlot(timeSlot);
+            _appContext.EditTimeSlot(timeSlot);
             return Redirect("/Admin/Tider");
         }
 
         [HttpPost]
-        public IActionResult EditUser(Customer customer)
+        public IActionResult EditUser(ApplicationUser user)
         {
-            _context.EditUser(customer);
+            _appContext.EditUser(user);
             return Redirect("/Admin/Brugere");
         }
 
         [HttpGet("/Admin/EditBooking/{id}")]
         public IActionResult EditBooking(int id)
         {
-            return View(_context.GetBooking(id));
+            return View(_appContext.GetBooking(id));
         }
 
         [HttpPost]
         public IActionResult EditBooking(Booking booking)
         {
-            _context.EditBooking(booking);
+            _appContext.EditBooking(booking);
             return Redirect("/Admin/Bookinger");
         }
 
         [HttpGet("/Admin/DeleteBooking/{id}")]
         public IActionResult DeleteBooking(int id)
         {
-            _context.DeleteBooking(_context.GetBooking(id));
+            _appContext.DeleteBooking(_appContext.GetBooking(id));
             return Redirect("/Admin/Bookinger");
         }
 
         [HttpGet("/Admin/DeleteUser/{id}")]
-        public IActionResult DeleteUser(int id)
+        public IActionResult DeleteUser(string id)
         {
-            _context.DeleteUser(_context.GetUser(id));
+            _appContext.DeleteUser(_appContext.GetUser(id));
             return Redirect("/Admin/Brugere");
         }
 
         [HttpGet("/Admin/DeleteTimeSlot/{id}")]
         public IActionResult DeleteTimeSlot(int id)
         {
-            _context.DeleteTimeSlot(_context.GetTimeSlot(id));
+            _appContext.DeleteTimeSlot(_appContext.GetTimeSlot(id));
             return Redirect("/Admin/Tider");
         }
     }

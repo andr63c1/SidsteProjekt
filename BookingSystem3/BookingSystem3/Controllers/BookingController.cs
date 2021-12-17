@@ -4,16 +4,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BookingSystem3.Models;
+using BookingSystem3.Services;
+using Braintree;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using BookingSystem3.Data;
 
 namespace BookingSystem3.Controllers
 {
+    [Authorize]
     public class BookingController : Controller
     {
-        private readonly BookingContext _context;
-
-        public BookingController(BookingContext context)
+        UserManager<ApplicationUser> _userManager;
+        private readonly ApplicationDbContext _context;
+        private readonly IBraintreeService _braintreeService;
+        public BookingController( ApplicationDbContext context, IBraintreeService braintreeService, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _braintreeService = braintreeService;
+            _userManager = userManager;
         }
 
         public IActionResult Index()
@@ -22,12 +31,65 @@ namespace BookingSystem3.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(Booking booking)
+        public IActionResult Index(BookingVM booking)
         {
+            booking.creater = _userManager.GetUserAsync(User).Result;
+            booking.timeSlot = new TimeSlot()
+            {
+                creater = booking.creater,
+                date = DateTime.Today
+            };
             //Add booking to database
-            _context.AddBooking(booking);
+            var newBooking =_context.AddBooking(booking);
 
-            return Index();
+            return Redirect("/Booking/Checkout/" + newBooking.bookingID);
+        }
+
+        public IActionResult Checkout(int Id)
+        {
+            var gateway = _braintreeService.GetGateway();
+            var clientToken = gateway.ClientToken.Generate();  //Genarate a token
+            ViewBag.ClientToken = clientToken;
+
+            BookingVM data = BookingVM.ConvertBookingToVM(_context.GetBooking(Id));
+
+            return View(data);
+        }
+
+        [HttpPost]
+        public IActionResult Create(BookingVM model)
+        {
+            var gateway = _braintreeService.GetGateway();
+            var request = new TransactionRequest
+            {
+                Amount = Convert.ToDecimal(model.GetTotalPrice()),
+                PaymentMethodNonce = model.Nonce,
+                Options = new TransactionOptionsRequest
+                {
+                    SubmitForSettlement = true
+                }
+            };
+
+            Result<Transaction> result = gateway.Transaction.Sale(request);
+
+            if (result.IsSuccess())
+            {
+                return Succes(model);
+            }
+            else
+            {
+                return Failure(model);
+            }
+        }
+
+        public IActionResult Succes(BookingVM model)
+        {
+            return View("Succes", model);
+        }
+
+        public IActionResult Failure(BookingVM model)
+        {
+            return View("Failure", model);
         }
     }
 }

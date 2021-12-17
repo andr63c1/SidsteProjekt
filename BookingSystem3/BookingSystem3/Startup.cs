@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 using BookingSystem3.Models;
 using Microsoft.Extensions.Logging;
 using System.IO;
+using BookingSystem3.Services;
 
 namespace BookingSystem3
 {
@@ -34,9 +35,9 @@ namespace BookingSystem3
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDbContext<BookingContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("BookingConnection")));
+            //services.AddDbContext<BookingContext>(options =>
+            //    options.UseSqlServer(
+            //        Configuration.GetConnectionString("BookingConnection")));
 
             services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddRoles<IdentityRole>()
@@ -68,6 +69,8 @@ namespace BookingSystem3
 
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddTransient<IBraintreeService, BraintreeService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
