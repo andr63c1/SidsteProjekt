@@ -5039,3 +5039,451 @@ Error Number:208,State:1,Class:16
 2021-12-17T09:30:41.2095256+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
 2021-12-17T09:31:05.0578357+01:00	INFO	[BookingSystem3.Areas.Identity.Pages.Account.RegisterModel]	[0]	User created a new account with password.
 2021-12-17T09:31:12.6234129+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T12:30:32.4312413+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role b1e02862-61f3-458c-b508-4f0d7f6276f8 validation failed: DuplicateRoleName.
+2021-12-17T12:30:32.5748524+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 1e5e5660-a7b6-4165-969a-08aa020c7034 validation failed: DuplicateRoleName.
+2021-12-17T12:30:32.5787998+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role e02f4d5c-491c-464d-a1d3-d62b1c8330d9 validation failed: DuplicateRoleName.
+2021-12-17T12:30:32.5832703+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 6f6b047a-5850-4eb6-bb3d-0bc0bbbe6987 validation failed: DuplicateRoleName.
+2021-12-17T12:30:32.9799400+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-17T12:30:32.9823447+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-17T12:30:32.9856231+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-17T12:30:33.5506929+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T12:30:47.9050505+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T12:31:36.6639390+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T12:51:04.5236181+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 8d5d4c0e-3743-4d7a-8bc7-a12f286888cc validation failed: DuplicateRoleName.
+2021-12-17T12:51:04.5894212+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 74fa1cd0-f0c6-4ce7-b183-8481c6daeed5 validation failed: DuplicateRoleName.
+2021-12-17T12:51:04.6009032+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 2f7d3f77-f864-42a8-8e04-8ac8eb92b5a1 validation failed: DuplicateRoleName.
+2021-12-17T12:51:04.6052078+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 64477eee-1375-468f-889b-a36d85ce80cf validation failed: DuplicateRoleName.
+2021-12-17T12:51:04.8379231+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-17T12:51:04.8396223+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-17T12:51:04.8411777+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-17T12:51:05.1465403+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T17:47:58.3209092+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 8be4030d-9a9d-4b1e-8433-5074a6b722ee validation failed: DuplicateRoleName.
+2021-12-17T17:47:58.5251079+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role aa3120d5-a0cf-4ae7-b68f-fedc3f08f3d7 validation failed: DuplicateRoleName.
+2021-12-17T17:47:58.5464769+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role fd091a49-6d63-4509-8cb9-5b01c3eb77d8 validation failed: DuplicateRoleName.
+2021-12-17T17:47:58.5516183+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role af2abec3-36fe-4edd-ad36-16bb1aa661cc validation failed: DuplicateRoleName.
+2021-12-17T17:47:58.8933818+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-17T17:47:58.8950872+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-17T17:47:58.8968876+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-17T17:47:59.1822645+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T17:48:32.1258390+01:00	INFO	[BookingSystem3.Areas.Identity.Pages.Account.LoginModel]	[0]	User logged in.
+2021-12-17T17:48:32.1678007+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T17:48:38.0848646+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T17:50:11.1751746+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role c599a25f-04d8-4286-9c07-587beacddedc validation failed: DuplicateRoleName.
+2021-12-17T17:50:11.2526257+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role e6a57e66-1ca8-485e-bcde-7b327630ca61 validation failed: DuplicateRoleName.
+2021-12-17T17:50:11.2639118+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 4559ed37-4b98-4a3c-ab69-75f27ab6af9b validation failed: DuplicateRoleName.
+2021-12-17T17:50:11.2675993+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 68c2a4b0-a1fe-465c-acd6-80f4cedcd0e7 validation failed: DuplicateRoleName.
+2021-12-17T17:50:11.4939425+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-17T17:50:11.4954460+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-17T17:50:11.4969453+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-17T17:50:11.7303808+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T17:50:22.2563359+01:00	INFO	[BookingSystem3.Areas.Identity.Pages.Account.LoginModel]	[0]	User logged in.
+2021-12-17T17:50:22.2978342+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T17:50:35.0203817+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T17:51:07.3748425+01:00	FAIL	[Microsoft.EntityFrameworkCore.Database.Command]	[Microsoft.EntityFrameworkCore.Database.Command.CommandError]	Failed executing DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [TimeSlots]
+WHERE [timeSlotID] = @p0;
+SELECT @@ROWCOUNT;
+2021-12-17T17:51:07.4665774+01:00	FAIL	[Microsoft.EntityFrameworkCore.Update]	[Microsoft.EntityFrameworkCore.Update.SaveChangesFailed]	An exception occurred in the database while saving changes for context type 'BookingSystem3.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Bookings_TimeSlots_timeSlotID". The conflict occurred in database "aspnet-BookingSystem3-B10F4272-B902-4535-8552-83143D692851", table "dbo.Bookings", column 'timeSlotID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:0af2e842-8bcf-4f4b-a729-bb77c077404d
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Bookings_TimeSlots_timeSlotID". The conflict occurred in database "aspnet-BookingSystem3-B10F4272-B902-4535-8552-83143D692851", table "dbo.Bookings", column 'timeSlotID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:0af2e842-8bcf-4f4b-a729-bb77c077404d
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+
+2021-12-17T17:53:52.5391225+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 34381920-884c-4349-9be2-905784ee2d97 validation failed: DuplicateRoleName.
+2021-12-17T17:53:52.5980731+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role f93284c7-73c2-4c0d-a73b-a824c45941b7 validation failed: DuplicateRoleName.
+2021-12-17T17:53:52.6090340+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 6927c9a8-9247-4bed-8b23-e7437963b51b validation failed: DuplicateRoleName.
+2021-12-17T17:53:52.6121932+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 2d4fcd55-7a58-44a3-a559-f2299bb76226 validation failed: DuplicateRoleName.
+2021-12-17T17:53:52.8308426+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-17T17:53:52.8324796+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-17T17:53:52.8340703+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-17T17:53:53.0614101+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T17:54:02.1856340+01:00	INFO	[BookingSystem3.Areas.Identity.Pages.Account.LoginModel]	[0]	User logged in.
+2021-12-17T17:54:02.2274886+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T17:55:27.2868750+01:00	INFO	[BookingSystem3.Data.ApplicationDbContext]	[0]	TimeSlot Added with Id:1002
+2021-12-17T17:55:33.0175655+01:00	FAIL	[Microsoft.EntityFrameworkCore.Database.Command]	[Microsoft.EntityFrameworkCore.Database.Command.CommandError]	Failed executing DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [TimeSlots]
+WHERE [timeSlotID] = @p0;
+SELECT @@ROWCOUNT;
+2021-12-17T17:55:33.0708591+01:00	FAIL	[Microsoft.EntityFrameworkCore.Update]	[Microsoft.EntityFrameworkCore.Update.SaveChangesFailed]	An exception occurred in the database while saving changes for context type 'BookingSystem3.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Bookings_TimeSlots_timeSlotID". The conflict occurred in database "aspnet-BookingSystem3-B10F4272-B902-4535-8552-83143D692851", table "dbo.Bookings", column 'timeSlotID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:c2397058-e22f-4a87-a41a-72da773c7c0f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Bookings_TimeSlots_timeSlotID". The conflict occurred in database "aspnet-BookingSystem3-B10F4272-B902-4535-8552-83143D692851", table "dbo.Bookings", column 'timeSlotID'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:c2397058-e22f-4a87-a41a-72da773c7c0f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+
+2021-12-17T17:56:05.9994933+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 2f512934-4da6-45ba-8449-5394adeffac2 validation failed: DuplicateRoleName.
+2021-12-17T17:56:06.0704702+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 6ede044d-83b1-462c-8373-b003329f5be2 validation failed: DuplicateRoleName.
+2021-12-17T17:56:06.0807913+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 97ad2b1e-edb4-453c-997b-f71d8b55c3a9 validation failed: DuplicateRoleName.
+2021-12-17T17:56:06.0841007+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 35f34324-aaba-4c68-a9b6-4fe60a7609a5 validation failed: DuplicateRoleName.
+2021-12-17T17:56:06.3088269+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-17T17:56:06.3104767+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-17T17:56:06.3119223+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-17T17:56:06.5004498+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T17:56:14.7744928+01:00	INFO	[BookingSystem3.Areas.Identity.Pages.Account.LoginModel]	[0]	User logged in.
+2021-12-17T17:56:14.8147135+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T17:56:41.2457287+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T18:21:28.5422765+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role fe319793-0019-4780-8a30-014234cf91b9 validation failed: DuplicateRoleName.
+2021-12-17T18:21:28.6021358+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 1147ee9c-4f7b-4867-b517-c68e4a2a01f0 validation failed: DuplicateRoleName.
+2021-12-17T18:21:28.6156786+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role abe05c1e-b41b-48f1-adc6-6ad805667903 validation failed: DuplicateRoleName.
+2021-12-17T18:21:28.6191848+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role b2378a17-0b93-43b6-a9e6-eb55c461a683 validation failed: DuplicateRoleName.
+2021-12-17T18:21:28.8495381+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-17T18:21:28.8511636+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-17T18:21:28.8527783+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-17T18:21:29.0832954+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T18:21:39.0925017+01:00	INFO	[BookingSystem3.Areas.Identity.Pages.Account.LoginModel]	[0]	User logged in.
+2021-12-17T18:21:39.1336199+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T18:25:53.1089403+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 039f35ec-8ddf-415b-80b9-156e770f54dd validation failed: DuplicateRoleName.
+2021-12-17T18:25:53.1679669+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 4f48983b-dd06-43c5-afc4-97619725c1fb validation failed: DuplicateRoleName.
+2021-12-17T18:25:53.1785939+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role b2d2a8eb-d0bc-4018-a976-7d05fbb58c6a validation failed: DuplicateRoleName.
+2021-12-17T18:25:53.1823186+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 15c25258-d1eb-4062-a037-724c8d6f1930 validation failed: DuplicateRoleName.
+2021-12-17T18:25:53.4069626+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-17T18:25:53.4085199+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-17T18:25:53.4100976+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-17T18:25:53.6903897+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T18:26:58.5507469+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role fccd90c5-377c-4475-89fb-454195f94b56 validation failed: DuplicateRoleName.
+2021-12-17T18:26:58.6104997+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 1d0c7a55-aa59-4a29-8a76-d1a3fb4d4684 validation failed: DuplicateRoleName.
+2021-12-17T18:26:58.6210777+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 309957ee-24e2-458d-be1d-6a0eae8ce13f validation failed: DuplicateRoleName.
+2021-12-17T18:26:58.6246497+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 012755c7-9489-46d2-83d9-f7ca809c2323 validation failed: DuplicateRoleName.
+2021-12-17T18:26:58.8404880+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-17T18:26:58.8421924+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-17T18:26:58.8439163+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-17T18:26:59.1169042+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T18:28:19.1103209+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 3ab5e908-d524-4bf7-8233-c9548cf6162b validation failed: DuplicateRoleName.
+2021-12-17T18:28:19.1678802+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role be0076d2-7080-439c-95c4-5931c938cc99 validation failed: DuplicateRoleName.
+2021-12-17T18:28:19.1789705+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role be42e4f8-5fb8-47b9-9861-ddc1ebe0f1d1 validation failed: DuplicateRoleName.
+2021-12-17T18:28:19.1822176+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 30ca4ca7-aeda-47df-be3c-3d7e6948dd93 validation failed: DuplicateRoleName.
+2021-12-17T18:28:19.4033249+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-17T18:28:19.4049653+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-17T18:28:19.4067776+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-17T18:28:19.6912341+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T18:29:02.8462638+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 2de051d2-8196-44d5-b974-c651c038d523 validation failed: DuplicateRoleName.
+2021-12-17T18:29:02.9052659+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 2e0dfcb4-b1d2-4257-a17a-46af5d12d3c3 validation failed: DuplicateRoleName.
+2021-12-17T18:29:02.9238501+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 4d5a6eba-e93d-485d-aaa6-19c6df2e2460 validation failed: DuplicateRoleName.
+2021-12-17T18:29:02.9278585+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role ea7695a5-41f2-473e-8f17-3a60a006e4ca validation failed: DuplicateRoleName.
+2021-12-17T18:29:03.1424309+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-17T18:29:03.1440012+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-17T18:29:03.1456579+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-17T18:29:03.4416320+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T18:29:05.0733102+01:00	FAIL	[Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]	[UnhandledException]	An unhandled exception has occurred while executing the request.System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'BookingSystem3.Models.Booking', but this ViewDataDictionary instance requires a model item of type 'BookingSystem3.Models.BookingVM'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2021-12-17T18:29:20.5495319+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 0ba14cdb-0383-480d-9591-3adb343ff5dd validation failed: DuplicateRoleName.
+2021-12-17T18:29:20.6093039+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 038a5db3-5004-4c55-9a2d-bf0a68995bd2 validation failed: DuplicateRoleName.
+2021-12-17T18:29:20.6230342+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role f46cf4e2-c26c-4ebe-b861-9b01704f6f86 validation failed: DuplicateRoleName.
+2021-12-17T18:29:20.6263555+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role bf1417c0-a6de-4038-b84b-f7107797fb9b validation failed: DuplicateRoleName.
+2021-12-17T18:29:20.8434128+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-17T18:29:20.8449388+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-17T18:29:20.8465431+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-17T18:29:21.1371802+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T18:30:06.9761799+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 204b3980-5ba2-44b6-8580-bf55b028cb3b validation failed: DuplicateRoleName.
+2021-12-17T18:30:07.0348742+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 678f3138-98b2-47c5-8ff2-af8e0f43ca40 validation failed: DuplicateRoleName.
+2021-12-17T18:30:07.0455896+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 295db980-df1a-4371-bcc1-9a75adf447a0 validation failed: DuplicateRoleName.
+2021-12-17T18:30:07.0493507+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 7c019cb3-15a0-4f18-80d2-27b7ec4129f7 validation failed: DuplicateRoleName.
+2021-12-17T18:30:07.2739895+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-17T18:30:07.2757857+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-17T18:30:07.2781418+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-17T18:30:07.5775462+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T18:31:04.9383725+01:00	INFO	[BookingSystem3.Data.ApplicationDbContext]	[0]	TimeSlot Added with Id:1003
+2021-12-17T18:31:06.3964975+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T18:32:22.8606378+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 2ce21ec3-e6b5-4123-b5cb-fb1a3dc5d2a1 validation failed: DuplicateRoleName.
+2021-12-17T18:32:22.9206695+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 93ca58c0-ab3c-4d73-a9cd-75f733554a1a validation failed: DuplicateRoleName.
+2021-12-17T18:32:22.9378041+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 280d2445-3098-4338-b75f-c030e9bd541d validation failed: DuplicateRoleName.
+2021-12-17T18:32:22.9422964+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 0fc4238b-dae1-481a-8bd1-42780fbe257b validation failed: DuplicateRoleName.
+2021-12-17T18:32:23.1584984+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-17T18:32:23.1603124+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-17T18:32:23.1621358+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-17T18:32:23.4658156+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T18:34:06.9409189+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 3f1d5af3-08d9-4ccc-9c28-c9d049924dfa validation failed: DuplicateRoleName.
+2021-12-17T18:34:07.0011561+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 7e2417d7-4500-4781-a636-249dae8fc424 validation failed: DuplicateRoleName.
+2021-12-17T18:34:07.0047994+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 8c85295d-6fdc-4649-b629-2c738e6d7e55 validation failed: DuplicateRoleName.
+2021-12-17T18:34:07.0082022+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 8b9c7f31-d1de-477e-9235-92cdd25a23f7 validation failed: DuplicateRoleName.
+2021-12-17T18:34:07.2252494+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-17T18:34:07.2271717+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-17T18:34:07.2287794+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-17T18:34:07.5254855+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T18:34:42.8379928+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role d1af705f-c879-4073-a888-3c119009b933 validation failed: DuplicateRoleName.
+2021-12-17T18:34:42.9047215+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 1fdea3a7-d48a-40e1-ab30-ac4c604f7465 validation failed: DuplicateRoleName.
+2021-12-17T18:34:42.9365808+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role acbb6ab1-7be6-4957-8469-78e2887e1df6 validation failed: DuplicateRoleName.
+2021-12-17T18:34:42.9403498+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 50ba5707-b844-4deb-9be0-60e9ab3ee16d validation failed: DuplicateRoleName.
+2021-12-17T18:34:43.1546388+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-17T18:34:43.1563554+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-17T18:34:43.1580919+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-17T18:34:43.4624557+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-17T18:42:18.0122755+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 214e58a7-5104-4792-9d7d-8a782c70b6c5 validation failed: DuplicateRoleName.
+2021-12-17T18:42:18.0709570+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 383d6685-2128-4676-8a7f-13670c697a34 validation failed: DuplicateRoleName.
+2021-12-17T18:42:18.0816402+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 68764877-906e-49fd-8471-be546f091ea4 validation failed: DuplicateRoleName.
+2021-12-17T18:42:18.0931815+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 4e675c8c-ed0d-4be6-b371-cfe3543f4ae6 validation failed: DuplicateRoleName.
+2021-12-17T18:42:18.3208521+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-17T18:42:18.3226637+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-17T18:42:18.3242265+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-17T18:42:18.6314489+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-18T12:38:56.8058159+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 1af99a27-fcf5-423f-9b3d-5190ed9affb3 validation failed: DuplicateRoleName.
+2021-12-18T12:38:57.1401994+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 6c5591ee-88b0-470d-bab5-d8677fc337df validation failed: DuplicateRoleName.
+2021-12-18T12:38:57.1594150+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 69d3339f-ef81-4486-8327-ce7ed49a425e validation failed: DuplicateRoleName.
+2021-12-18T12:38:57.1630579+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 5d27842e-b840-4f88-9763-b294fea4ea80 validation failed: DuplicateRoleName.
+2021-12-18T12:38:57.5098017+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-18T12:38:57.5114119+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-18T12:38:57.5149056+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-18T12:38:57.7830058+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-18T12:39:07.5053717+01:00	INFO	[BookingSystem3.Areas.Identity.Pages.Account.LoginModel]	[0]	User logged in.
+2021-12-18T12:39:07.5458142+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-18T12:39:34.1591054+01:00	INFO	[BookingSystem3.Data.ApplicationDbContext]	[0]	TimeSlot Added with Id:1004
+2021-12-18T12:39:37.2191471+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-18T12:39:58.3163448+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 87d5fbfe-8846-4ce7-8cdb-e85a09a8a6f0 validation failed: DuplicateRoleName.
+2021-12-18T12:39:58.3741916+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 7c9a5b94-69a4-4481-8b87-dd947adb0d9a validation failed: DuplicateRoleName.
+2021-12-18T12:39:58.3880225+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 4f82d558-2fc4-40b5-bc5b-4bce714ac6e1 validation failed: DuplicateRoleName.
+2021-12-18T12:39:58.3918902+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 82714f01-600b-4f4e-88ec-b89208c12821 validation failed: DuplicateRoleName.
+2021-12-18T12:39:58.6076247+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-18T12:39:58.6095021+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-18T12:39:58.6110977+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-18T12:39:58.8319314+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-18T12:40:06.9080027+01:00	INFO	[BookingSystem3.Areas.Identity.Pages.Account.LoginModel]	[0]	User logged in.
+2021-12-18T12:40:06.9495257+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-18T12:42:03.8113693+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 668a2caf-2546-46c0-8f4c-8deeca788ddc validation failed: DuplicateRoleName.
+2021-12-18T12:42:03.8710322+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role bb9b59b2-e3ea-48e3-a888-22d304ccc423 validation failed: DuplicateRoleName.
+2021-12-18T12:42:03.8885071+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 43223f33-a2e5-4865-982b-8d6dd3a9bd46 validation failed: DuplicateRoleName.
+2021-12-18T12:42:03.8917496+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 453cc6f8-9ec4-4dc9-828a-b20785d4517e validation failed: DuplicateRoleName.
+2021-12-18T12:42:04.1047079+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-18T12:42:04.1062060+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-18T12:42:04.1078235+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-18T12:42:04.3246292+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-18T12:42:13.4442559+01:00	WARN	[Microsoft.AspNetCore.Identity.UserManager]	[0]	Invalid password for user 1ef7ca13-fbd4-4da3-99c9-75784d0e41f1.
+2021-12-18T12:42:13.4464354+01:00	WARN	[Microsoft.AspNetCore.Identity.SignInManager]	[2]	User 1ef7ca13-fbd4-4da3-99c9-75784d0e41f1 failed to provide the correct password.
+2021-12-18T12:42:19.9829531+01:00	INFO	[BookingSystem3.Areas.Identity.Pages.Account.LoginModel]	[0]	User logged in.
+2021-12-18T12:42:20.0165452+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-18T12:43:43.0379781+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role fe83c3e1-cf5d-4aac-a25f-00089f174cda validation failed: DuplicateRoleName.
+2021-12-18T12:43:43.1037159+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 334bb23a-936a-4ad4-ab92-dacf18df8492 validation failed: DuplicateRoleName.
+2021-12-18T12:43:43.1147082+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 3be5538c-bfec-4c12-b07b-6c1afbd377d7 validation failed: DuplicateRoleName.
+2021-12-18T12:43:43.1182905+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 98346552-811e-409b-9249-1cb6c677527a validation failed: DuplicateRoleName.
+2021-12-18T12:43:43.3331927+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-18T12:43:43.3347044+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-18T12:43:43.3362059+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-18T12:43:43.6265565+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-18T13:05:16.5976524+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 96a353b8-b646-4238-a052-d98f14e795c1 validation failed: DuplicateRoleName.
+2021-12-18T13:05:16.6560786+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 06e3d8f8-0fd5-4c52-80fd-52e94780a9a9 validation failed: DuplicateRoleName.
+2021-12-18T13:05:16.6671231+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 5b545c47-cc41-4182-8287-c8724a449943 validation failed: DuplicateRoleName.
+2021-12-18T13:05:16.6707727+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role a846e8ea-1c2c-440e-912c-a2fd556c5f65 validation failed: DuplicateRoleName.
+2021-12-18T13:05:16.9001895+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-18T13:05:16.9016881+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-18T13:05:16.9033570+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-18T13:05:17.2042274+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-18T13:05:22.1126475+01:00	FAIL	[Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor]	[ViewNotFound]	The view 'UpdateDateTimeSlotSelection' was not found. Searched locations: /Views/Booking/UpdateDateTimeSlotSelection.cshtml, /Views/Shared/UpdateDateTimeSlotSelection.cshtml, /Pages/Shared/UpdateDateTimeSlotSelection.cshtml
+2021-12-18T13:05:22.1905744+01:00	FAIL	[Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]	[UnhandledException]	An unhandled exception has occurred while executing the request.System.InvalidOperationException: The view 'UpdateDateTimeSlotSelection' was not found. The following locations were searched:
+/Views/Booking/UpdateDateTimeSlotSelection.cshtml
+/Views/Shared/UpdateDateTimeSlotSelection.cshtml
+/Pages/Shared/UpdateDateTimeSlotSelection.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2021-12-18T13:05:47.1917616+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 895fe08c-6e16-488d-acf7-a76204167077 validation failed: DuplicateRoleName.
+2021-12-18T13:05:47.2495622+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 379afa9b-9afd-4978-a466-c55a6219d1e5 validation failed: DuplicateRoleName.
+2021-12-18T13:05:47.2600627+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 05e84f45-ca02-4bd5-9451-bed0c6dfe955 validation failed: DuplicateRoleName.
+2021-12-18T13:05:47.2634159+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 907bd069-bf1e-407b-8cc5-5204fd68eea6 validation failed: DuplicateRoleName.
+2021-12-18T13:05:47.4823731+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-18T13:05:47.4840109+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-18T13:05:47.4860034+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-18T13:05:47.7741680+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-18T13:05:49.2066605+01:00	FAIL	[Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor]	[ViewNotFound]	The view 'UpdateDateTimeSlotSelection' was not found. Searched locations: /Views/Booking/UpdateDateTimeSlotSelection.cshtml, /Views/Shared/UpdateDateTimeSlotSelection.cshtml, /Pages/Shared/UpdateDateTimeSlotSelection.cshtml
+2021-12-18T13:05:49.2588503+01:00	FAIL	[Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware]	[UnhandledException]	An unhandled exception has occurred while executing the request.System.InvalidOperationException: The view 'UpdateDateTimeSlotSelection' was not found. The following locations were searched:
+/Views/Booking/UpdateDateTimeSlotSelection.cshtml
+/Views/Shared/UpdateDateTimeSlotSelection.cshtml
+/Pages/Shared/UpdateDateTimeSlotSelection.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2021-12-18T13:06:31.0859630+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 711c0477-8286-46b5-a255-9e09c8ddd328 validation failed: DuplicateRoleName.
+2021-12-18T13:06:31.1527113+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 67788261-f71b-443a-a094-4c22a448a3c9 validation failed: DuplicateRoleName.
+2021-12-18T13:06:31.1644289+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 3b3f8d47-57d8-47f2-869c-ded3ea504910 validation failed: DuplicateRoleName.
+2021-12-18T13:06:31.1677298+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 2a7acd71-2be1-42b8-87bb-d2e370a836c5 validation failed: DuplicateRoleName.
+2021-12-18T13:06:31.3829887+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-18T13:06:31.3845050+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-18T13:06:31.3861990+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-18T13:06:31.6708431+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-18T13:11:45.4850156+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 27f2add9-468a-441b-88ac-94e954e2e15e validation failed: DuplicateRoleName.
+2021-12-18T13:11:45.5435167+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role f10eb556-2e13-47bc-b8bf-db3270fe8408 validation failed: DuplicateRoleName.
+2021-12-18T13:11:45.5538906+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 21921afc-db50-427d-981c-87dca60d1bb5 validation failed: DuplicateRoleName.
+2021-12-18T13:11:45.5649248+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 497d85da-6311-4d87-b87d-1b1ff66f2be2 validation failed: DuplicateRoleName.
+2021-12-18T13:11:45.7822229+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-18T13:11:45.7837334+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-18T13:11:45.7854025+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-18T13:11:46.0531100+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-18T13:12:11.9388328+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging

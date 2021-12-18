@@ -24,11 +24,11 @@
             <td>@booking.date.ToString("dd-MM-yyyy")</td>
             <td>@booking.startTime.ToString("HH:mm")</td>
             <td>@booking.startTime.AddMinutes(booking.duration).ToString("HH:mm") </td>
-            <td></td>
+            <td>@booking.creater.UserName</td>
             <td>@booking.status.ToString()</td>
             <td>@booking.topic</td>
-            <td></td>
-            <td></td>
+            <td>@booking.timeSlot.creater.UserName</td>
+            <td>@booking.creater.Company</td>
             <td><a class="button" href="/Admin/EditBooking/@booking.bookingID">Læs mere</a></td>
             <td><a class="button" href="/Admin/DeleteBooking/@booking.bookingID">Slet</a></td>
         </tr>
