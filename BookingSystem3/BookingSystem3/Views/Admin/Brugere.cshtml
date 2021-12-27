@@ -1,4 +1,6 @@
 ﻿@using BookingSystem3.Data
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<ApplicationUser> UserManager
 @model IEnumerable<ApplicationUser>
 @{
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
@@ -19,14 +21,14 @@
     </tr>
     @foreach (ApplicationUser user in Model)
     {
-    <tr>
-        <td>@user.UserName</td>
-        <td>@user.Email</td>
-        <td>@user.PhoneNumber</td>
-        <td>Role</td>
-        <td>@user.Company</td>
-        <td><a href="/admin/editUser/@user.Id">Læs mere</a></td>
-        <td><a href="/admin/deleteUser/@user.Id">Slet</a></td>
-    </tr>
+        <tr>
+            <td>@user.UserName</td>
+            <td>@user.Email</td>
+            <td>@user.PhoneNumber</td>
+            <td>@string.Join(",", UserManager.GetRolesAsync(user).Result)</td>
+            <td>@user.Company</td>
+            <td><a href="/admin/editUser/@user.Id">Rediger/Mere</a></td>
+            <td><a href="/admin/deleteUser/@user.Id">Slet</a></td>
+        </tr>
     }
-</table>
+</table> 

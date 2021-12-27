@@ -52,13 +52,13 @@
             <td><input asp-for="Company" type="text" value="@Model.Company" /></td>
         </tr>
         <tr>
-            <td><label>Rettigheder</label></td>
+            <td><label><a asp-controller="Roles" asp-action="Manage" asp-route-userId="@Model.Id">Rettigheder</a></label></td>
             <td>
-                <select typeof="text" value="" form="userCredentials">
+                @*<select typeof="text" value="" form="userCredentials">
                     <option value="Godkendt">Godkendt</option>
                     <option value="IkkeGodkendt">Ikke godkendt</option>
                     <option value="Ansat">Ansat</option>
-                </select>
+                </select>*@
             </td>
         </tr>
     </table>

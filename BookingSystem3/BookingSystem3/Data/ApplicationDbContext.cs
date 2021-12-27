@@ -53,7 +53,7 @@ namespace BookingSystem3.Data
 
         public ApplicationUser DeleteUser(ApplicationUser user)
         {
-            this.Remove(user);
+            Remove(user);
             SaveChanges();
 
             return user;
@@ -87,7 +87,7 @@ namespace BookingSystem3.Data
 
         public TimeSlot EditTimeSlot(TimeSlot timeSlot)
         {
-            this.Update(timeSlot);
+            Update(timeSlot);
             SaveChanges();
 
             return timeSlot;
@@ -113,7 +113,7 @@ namespace BookingSystem3.Data
 
         public Booking EditBooking(Booking booking)
         {
-            this.Update(booking);
+            Update(booking);
             SaveChanges();
 
             return booking;
@@ -121,7 +121,7 @@ namespace BookingSystem3.Data
 
         public Booking DeleteBooking(Booking booking)
         {
-            this.Remove(booking);
+            Remove(booking);
             SaveChanges();
 
             return booking;
@@ -129,7 +129,10 @@ namespace BookingSystem3.Data
 
         public TimeSlot DeleteTimeSlot(TimeSlot timeSlot)
         {
-            this.Remove(timeSlot);
+            //Delete bookings linked to to 
+            RemoveRange(Bookings.Where(x => x.timeSlot.timeSlotID == timeSlot.timeSlotID));
+
+            Remove(timeSlot);
             SaveChanges();
 
             return timeSlot;
