@@ -5802,6 +5802,7 @@ Error Number:547,State:0,Class:16
 2021-12-23T15:18:44.9691980+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
 2021-12-23T15:18:44.9708826+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
 2021-12-23T15:18:45.2809280+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+<<<<<<< Updated upstream
 2021-12-24T12:03:07.4909417+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
 2021-12-24T12:03:07.6138466+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
 2021-12-24T12:03:07.6167791+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: C:\Users\andre\Documents\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
@@ -6164,3 +6165,23 @@ Error Number:547,State:0,Class:16
 2021-12-24T13:27:07.2372157+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
 2021-12-24T13:27:58.9598034+01:00	INFO	[BookingSystem3.Data.ApplicationDbContext]	[0]	TimeSlot Added with Id:2
 2021-12-24T13:28:01.6383076+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+=======
+2021-12-27T09:19:22.2304073+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role f7d3ecbf-c290-4900-a5d9-32c93816381d validation failed: DuplicateRoleName.
+2021-12-27T09:19:22.4178480+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role acb2bdde-fcf7-4d60-a8cf-460e43e1c240 validation failed: DuplicateRoleName.
+2021-12-27T09:19:22.4219954+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role a7719b66-6c33-4d45-b252-f84d61d7160f validation failed: DuplicateRoleName.
+2021-12-27T09:19:22.4344350+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 1c95cf33-8ee5-4c83-aeb4-70a59e007196 validation failed: DuplicateRoleName.
+2021-12-27T09:19:22.9077812+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-27T09:19:22.9098561+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-27T09:19:22.9128830+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-27T09:19:23.3017876+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-27T09:19:35.5742495+01:00	INFO	[BookingSystem3.Areas.Identity.Pages.Account.LoginModel]	[0]	User logged in.
+2021-12-27T09:19:35.6276201+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2021-12-27T09:22:04.1668719+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role f5c66ca5-7b16-4e64-9772-166d70569308 validation failed: DuplicateRoleName.
+2021-12-27T09:22:04.2288477+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 6a9b8c18-56f8-4bb2-bfd4-5de4081bb3f8 validation failed: DuplicateRoleName.
+2021-12-27T09:22:04.2398150+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role ca6b45c3-5bae-4c3a-ac12-49d01339d7ba validation failed: DuplicateRoleName.
+2021-12-27T09:22:04.2433479+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 4eacf686-bc6c-4d8e-b6c4-087ee441f642 validation failed: DuplicateRoleName.
+2021-12-27T09:22:04.4854848+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2021-12-27T09:22:04.4871604+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2021-12-27T09:22:04.4887083+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2021-12-27T09:22:04.7964361+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+>>>>>>> Stashed changes
