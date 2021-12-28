@@ -138,7 +138,7 @@
     }
 
     function DrawDates(date) {
-        removeDate();
+        removeDates();
         var ul = document.getElementsByClassName("days")[0];
         for (var d = 1; d <= daysInMonth(date.getMonth(), date.getYear() + 1900); d++) {
             var li = document.createElement("li");
@@ -181,7 +181,7 @@
         yearElement.innerHTML = year;
     }
 
-    function removeDate() {
+    function removeDates() {
         var ul = document.getElementsByClassName("days")[0];
         ul.innerHTML = "";
     }
