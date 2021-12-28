@@ -27,7 +27,10 @@ namespace BookingSystem3.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            BookingPageViewModel model = new BookingPageViewModel();
+            model.TimeSlots = _context.GetTimeSlots();
+            model.Booking = new BookingVM();
+            return View(model);
         }
 
         [HttpPost]

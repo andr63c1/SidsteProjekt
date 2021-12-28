@@ -149,10 +149,28 @@ ul.days {
     cursor: pointer;
 }
 
-.displayTimeSlots table tr td:nth-child(2) {
+.displayTimeSlots table tr td:nth-child(2){
     float: right;
 }
 
-.displayTimeSlots table{
+.displayTimeSlots table {
     width: 100%;
+}
+
+ul#timeSlotView {
+    width: 100%;
+    padding: 0;
+}
+
+ul#timeSlotView li {
+    display: flex;
+    width: 100%;
+}
+
+ul#timeSlotView li div{
+    width: 50%;
+}
+
+ul#timeSlotView li div:nth-child(2) {
+    text-align: right;
 }
