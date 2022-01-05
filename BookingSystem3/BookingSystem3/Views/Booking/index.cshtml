@@ -5,7 +5,7 @@
 <head>
 	<link rel="stylesheet" href="~/css/Calendar.css" />
 </head>
-<h1>CSS Calendar</h1>
+<h1>Book en konsultation</h1>
 <div class="bookingContainer">
 	<div class="calendar">
 		<div class="month">
@@ -73,10 +73,9 @@
 					<option>Projekt styring</option>
 					<option>Andet</option>
 				</select><br /><br />
-				<input type="number" asp-for="Booking.timeSlot.standardPrice" />
 				<label>Kommentar</label><br />
 				<textarea asp-for="Booking.comment"></textarea><br /><br />
-				<input type="submit" class="submit" />
+				<input type="submit" class="submit" value="Videre" />
 			</form>
 		</div>
 
@@ -89,7 +88,6 @@
 		string json = JsonConvert.SerializeObject(Model.TimeSlots);
         @Html.Raw(string.Format("var timeSlots = {0};", json));
     }
-    @*var timeSlots = @Html.Raw(Model.TimeSlots);*@
     date = new Date();
     DrawDates(date);
 
@@ -109,8 +107,8 @@
 		timeSlotTimeDiv.innerHTML = item.start.toString().split("T")[1].slice(0, 5) + "-" + item.end.toString().split("T")[1].slice(0, 5);
 
         var timeSlotCostDiv = document.createElement("div");
-		if (item.specialPrice > 0) { timeSlotCostDiv.innerHTML = item.specialPrice; }
-        else { timeSLotCostDiv.innerHTML = item.standardPrice; }
+		if (item.specialPrice > 0) { timeSlotCostDiv.innerHTML = item.specialPrice + " DKK/t"; }
+        else { timeSlotCostDiv.innerHTML = item.standardPrice + " DKK/t"; }
 
 		timeSlotItem.appendChild(timeSlotTimeDiv);
 		timeSlotItem.appendChild(timeSlotCostDiv);
