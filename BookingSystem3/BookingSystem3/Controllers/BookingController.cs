@@ -37,14 +37,25 @@ namespace BookingSystem3.Controllers
         public IActionResult Index(BookingVM booking)
         {
             booking.creater = _userManager.GetUserAsync(User).Result;
-            booking.timeSlot = new TimeSlot()
+
+            if(_context.GetTimeSlotForBooking(booking) != null)
             {
-                creater = booking.creater,
-                date = DateTime.Today
-            };
+                booking.timeSlot = _context.GetTimeSlotForBooking(booking);
+            }
+            else { return Redirect("/Booking/Failure"); }
+            
             //Add booking to database
             var newBooking =_context.AddBooking(booking);
 
+            var userRoles = _userManager.GetRolesAsync(booking.creater).Result;
+            foreach(string str in userRoles)
+            {
+                if (str == "Verified")
+                {
+                    return Succes(booking);
+                }
+            }
+            
             return Redirect("/Booking/Checkout/" + newBooking.bookingID);
         }
 

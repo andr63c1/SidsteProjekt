@@ -108,12 +108,19 @@
 
         var timeSlotCostDiv = document.createElement("div");
 		if (item.specialPrice > 0) { timeSlotCostDiv.innerHTML = item.specialPrice + " DKK/t"; }
-        else { timeSlotCostDiv.innerHTML = item.standardPrice + " DKK/t"; }
+		else { timeSlotCostDiv.innerHTML = item.standardPrice + " DKK/t"; }
+
+		var timeSlotDateDiv = document.createElement("div");
+		timeSlotDateDiv.id = "timeSlotDateDiv"
+		timeSlotDateDiv.innerHTML = item.date.split("T")[0];
+		timeSlotDateDiv.style = "display: none;";
 
 		timeSlotItem.appendChild(timeSlotTimeDiv);
-		timeSlotItem.appendChild(timeSlotCostDiv);
+        timeSlotItem.appendChild(timeSlotCostDiv);
+		timeSlotItem.appendChild(timeSlotDateDiv);
 
 		timeSlotView.appendChild(timeSlotItem);
+		filterTimeSlot();
     };
 
 
@@ -132,7 +139,9 @@
         selectedDate.valueAsDate = date;
 
         var options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
-        document.getElementById("dateLabel").innerHTML = date.toLocaleString('default', options);
+		document.getElementById("dateLabel").innerHTML = date.toLocaleString('default', options);
+
+		filterTimeSlot();
     }
 
     function DrawDates(date) {
@@ -192,13 +201,16 @@
 		filter = input.value;
 		ul = document.getElementById("timeSlotView");
 		li = ul.getElementsByTagName('li');
-
+		console.log(li.length);
 		// Loop through all list items, and hide those who don't match the search query
         // TODO: skift til korrekte variabler
 		for (i = 0; i < li.length; i++) {
-			a = li[i].getElementsByTagName("a")[0];
-			txtValue = a.textContent || a.innerText;
-			if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a = li[i].getElementsByTagName("div")[2];
+			txtValue = a.innerHTML;
+
+			console.log(txtValue + " == " + filter);
+
+			if (txtValue == filter) {
 				li[i].style.display = "";
 			} else {
 				li[i].style.display = "none";

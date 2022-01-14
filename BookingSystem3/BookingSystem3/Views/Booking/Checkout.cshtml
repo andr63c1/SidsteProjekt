@@ -1,7 +1,7 @@
 ﻿@model BookingSystem3.Models.BookingVM
 
 @{
-    ViewData["Title"] = "Purchase";
+    ViewData["Title"] = "Betal";
 }
 
 <div class="wrapper">
@@ -18,8 +18,8 @@
                 <div class="card-body">
                     <h5 class="card-title" name="Title" asp-for="@Model.topic">@Model.topic</h5>
                     <p class="card-text">@Model.comment</p>
-                    <p class="card-text"><small class="text-muted">Author: @Model.timeSlot.creater</small></p>
-                    <p class="card-text"><small class="text-muted">Price: @Model.GetTotalPrice()</small></p>
+                    <p class="card-text"><small class="text-muted">Konsulent: @Model.timeSlot.creater</small></p>
+                    <p class="card-text"><small class="text-muted">Pris: @Model.GetTotalPrice()</small></p>
                 </div>
                 @*<img style="width: 90%" class="card-img-bottom" src="@Model.Thumbnail" alt="Card image cap">*@
             </div>
@@ -30,7 +30,7 @@
             </section>
             @Html.HiddenFor(n => n.Nonce, new { @id = "nonce" })
             <hr />
-            <button class="btn btn-success" type="submit"><span>Confirm payment - $@Model.GetTotalPrice()</span></button>
+            <button class="btn btn-success" type="submit"><span>Bekræft betaling - @Model.GetTotalPrice() DKK</span></button>
         </form>
     </div>
 </div>

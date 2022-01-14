@@ -137,5 +137,12 @@ namespace BookingSystem3.Data
 
             return timeSlot;
         }
+
+        public TimeSlot GetTimeSlotForBooking(Booking booking)
+        {
+            var timeSlots = TimeSlots.Where(x => x.date == booking.date && x.start <= booking.startTime && x.end >= booking.startTime.AddMinutes(booking.duration));
+            if(timeSlots.Count() <= 0){ return null; }
+            else { return timeSlots.First(); }
+        }
     }
 }
