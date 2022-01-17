@@ -33,7 +33,10 @@ namespace BookingSystem3.Models
             prices.RemoveAll(x => x == 0);
             float minPrice = prices.Min(x => x);
 
-            return minPrice/(60/duration);
+            if (duration > 60) { total = minPrice * 2; }
+            else { total = minPrice; }
+
+            return total;
         }
 
     }
