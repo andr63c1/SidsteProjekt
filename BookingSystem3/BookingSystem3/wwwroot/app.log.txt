@@ -7049,3 +7049,34 @@ Error Number:547,State:0,Class:16
 2022-01-14T12:03:07.4384284+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
 2022-01-14T12:03:17.2028925+01:00	INFO	[BookingSystem3.Data.ApplicationDbContext]	[0]	Booking Added with Id:1028
 2022-01-14T12:03:38.0435953+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2022-01-17T11:18:14.9263892+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 4cd5fd8b-9cc6-44e5-a982-1812190a8596 validation failed: DuplicateRoleName.
+2022-01-17T11:18:15.0834021+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 528e4464-b573-4e40-a3e9-6ae762db207b validation failed: DuplicateRoleName.
+2022-01-17T11:18:15.1032459+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 703794e7-b41a-4179-a0fc-2ad60604623f validation failed: DuplicateRoleName.
+2022-01-17T11:18:15.1073600+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role f29c8e47-904c-47d7-949e-51b6f8ae4b35 validation failed: DuplicateRoleName.
+2022-01-17T11:18:15.5064824+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2022-01-17T11:18:15.5083976+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2022-01-17T11:18:15.5103210+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2022-01-17T11:18:15.8064062+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2022-01-17T11:18:24.0996579+01:00	WARN	[Microsoft.AspNetCore.Identity.UserManager]	[0]	Invalid password for user 1ef7ca13-fbd4-4da3-99c9-75784d0e41f1.
+2022-01-17T11:18:24.1027386+01:00	WARN	[Microsoft.AspNetCore.Identity.SignInManager]	[2]	User 1ef7ca13-fbd4-4da3-99c9-75784d0e41f1 failed to provide the correct password.
+2022-01-17T11:18:28.4027715+01:00	INFO	[BookingSystem3.Areas.Identity.Pages.Account.LoginModel]	[0]	User logged in.
+2022-01-17T11:18:28.4407641+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2022-01-17T11:21:31.2175074+01:00	INFO	[BookingSystem3.Data.ApplicationDbContext]	[0]	TimeSlot Added with Id:1019
+2022-01-17T11:22:04.0153849+01:00	INFO	[BookingSystem3.Areas.Identity.Pages.Account.LogoutModel]	[0]	User logged out.
+2022-01-17T11:22:04.0406980+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2022-01-17T11:22:11.3646893+01:00	INFO	[BookingSystem3.Areas.Identity.Pages.Account.LoginModel]	[0]	User logged in.
+2022-01-17T11:22:11.4010245+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2022-01-17T11:22:47.9829279+01:00	INFO	[BookingSystem3.Data.ApplicationDbContext]	[0]	Booking Added with Id:1029
+2022-01-17T11:23:20.1225278+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2022-01-17T11:23:40.1092101+01:00	INFO	[BookingSystem3.Data.ApplicationDbContext]	[0]	Booking Added with Id:1030
+2022-01-17T11:23:57.3159350+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2022-01-17T11:33:07.8445411+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 2e360919-1be2-45e9-8e2f-95192ec0e5af validation failed: DuplicateRoleName.
+2022-01-17T11:33:07.9041697+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 2e1516e2-7dd5-4bfb-8676-d7b9dda2b320 validation failed: DuplicateRoleName.
+2022-01-17T11:33:07.9278307+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role 336e59b2-7a7d-4c2a-b54a-eb61468c233f validation failed: DuplicateRoleName.
+2022-01-17T11:33:07.9320999+01:00	WARN	[Microsoft.AspNetCore.Identity.RoleManager]	[0]	Role d8c0639c-940a-4c91-9708-142c372d1fd0 validation failed: DuplicateRoleName.
+2022-01-17T11:33:08.1652812+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Application started. Press Ctrl+C to shut down.
+2022-01-17T11:33:08.1672275+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Hosting environment: Development
+2022-01-17T11:33:08.1695640+01:00	INFO	[Microsoft.Hosting.Lifetime]	[0]	Content root path: E:\GitHub\SidsteProjekt\BookingSystem3\BookingSystem3
+2022-01-17T11:33:08.4664007+01:00	INFO	[BookingSystem3.Controllers.HomeController]	[0]	Testing Index Logging
+2022-01-17T11:33:22.8206115+01:00	INFO	[BookingSystem3.Data.ApplicationDbContext]	[0]	Booking Added with Id:1031
+2022-01-17T11:33:40.7526159+01:00	INFO	[BookingSystem3.Data.ApplicationDbContext]	[0]	Booking Added with Id:1032
